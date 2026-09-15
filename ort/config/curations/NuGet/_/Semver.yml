@@ -1,0 +1,28 @@
+- id: "NuGet::Semver"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet::Semver"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/WalkerCodeRanger/semver.git"
+
+- id: "NuGet::Semver"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "Semver"
+
+- id: "NuGet::Semver"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/WalkerCodeRanger/semver/blob/v3.0.0/License.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Semver/3.0.0/license": "MIT"

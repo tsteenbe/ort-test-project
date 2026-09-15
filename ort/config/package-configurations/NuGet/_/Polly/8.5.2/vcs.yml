@@ -1,0 +1,11 @@
+---
+id: "NuGet::Polly:8.5.2"
+vcs:
+  type: "Git"
+  url: "https://github.com/App-vNext/Polly.git"
+  revision: "a953ba8119074d7f63cc69643d4ef1d1de52ee3f"
+path_excludes:
+- pattern: "docs/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF" 

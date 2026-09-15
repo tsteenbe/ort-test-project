@@ -1,0 +1,63 @@
+- id: "NuGet:System.Memory:Data"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Memory:Data"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.1/src/runtime/LICENSE.TXT
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Memory.Data/10.0.1/license": "MIT"
+      "https://www.nuget.org/packages/System.Memory.Data/10.0.3/license": "MIT"
+      "https://www.nuget.org/packages/System.Memory.Data/10.0.9/license": "MIT"
+
+- id: "NuGet:System.Memory:Data:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/System.Memory.Data
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:System.Memory:Data:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/System.Memory.Data/src"
+
+- id: "NuGet:System.Memory:Data:[6.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/System.Memory.Data
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Memory:Data:[6.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Memory.Data/src"
+
+- id: "NuGet:System.Memory:Data:[1.0.0,1.0.2]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/System.Memory.Data
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net"
+
+- id: "NuGet:System.Memory:Data:[1.0.0,1.0.2]"
+  curations:
+    comment: |
+      Manually located the VCS path of the module inside the multi-module repository.
+    vcs:
+      path: "sdk/core/System.Memory.Data/src"

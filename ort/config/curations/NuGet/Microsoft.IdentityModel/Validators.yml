@@ -1,0 +1,30 @@
+- id: "NuGet:Microsoft.IdentityModel:Validators"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.IdentityModel:Validators:[6.14.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.IdentityModel.Validators.
+    vcs:
+      type: "Git"
+      url: "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet.git"
+
+- id: "NuGet:Microsoft.IdentityModel:Validators:[6.14.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.IdentityModel.Validators"
+
+- id: "NuGet:Microsoft.IdentityModel:Validators:[8.19.1,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/8.19.1/LICENSE.txt#L1-L21.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.IdentityModel.Validators/8.19.1/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.IdentityModel.Validators/8.19.2/license": "MIT"

@@ -1,0 +1,7 @@
+- id: "NuGet:Azure.Storage:Queues"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Queues_12.27.1/sdk/storage/Azure.Storage.Queues/src/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Storage.Queues/12.27.1/license": "MIT"

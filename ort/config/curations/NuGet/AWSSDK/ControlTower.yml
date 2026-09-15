@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:ControlTower:[3.7.348,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ControlTower"

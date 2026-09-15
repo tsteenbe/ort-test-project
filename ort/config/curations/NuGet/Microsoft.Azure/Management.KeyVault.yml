@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.KeyVault"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/keyvault/Microsoft.Azure.Management.KeyVault"

@@ -1,0 +1,34 @@
+---
+id: "PyPI::six:(,1.17.0]"
+path_excludes:
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CHANGES"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/PKG-INFO2"
+  reason: "DATA_FILE_OF"
+  comment: |
+    Package metadata file generated during build. Not included of the distributed runtime artifact.
+- pattern: "**/setup.cfg"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/setup.py"
+  reason: "BUILD_TOOL_OF"
+license_finding_curations:
+- path: "**/setup.cfg"
+  detected_license: "NOASSERTION"
+  reason: "INCORRECT"
+  comment: |
+    FIXME: Added for notice debugging/demonstration purposes only.
+  concluded_license: "LicenseRef-ort-example-license OR MIT"
+- path: "**/PKG-INFO"
+  detected_license: "NOASSERTION"
+  reason: "INCORRECT"
+  comment: |
+    FIXME: Added for notice debugging/demonstration purposes only.
+  concluded_license: "LicenseRef-ort-example-license2 OR MIT"
+- path: "**/six.egg-info/PKG-INFO"
+  detected_license: "NOASSERTION"
+  reason: "INCORRECT"
+  comment: |
+    FIXME: Added for notice debugging/demonstration purposes only.
+  concluded_license: "LicenseRef-ort-example-license3 OR MIT"

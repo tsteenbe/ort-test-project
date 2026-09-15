@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.DotNet:Web.Client.ItemTemplates:[2.1.7,2.2.13]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Templating/src/Microsoft.DotNet.Web.Client.ItemTemplates"
+- id: "NuGet:Microsoft.DotNet:Web.Client.ItemTemplates:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/ProjectTemplates/Web.Client.ItemTemplates"

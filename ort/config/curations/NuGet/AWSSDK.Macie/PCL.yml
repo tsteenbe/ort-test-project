@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.Macie:PCL:[3.3.304,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Macie"

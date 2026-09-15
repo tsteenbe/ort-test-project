@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:WAFRegional:[3.3.30,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/WAFRegional"

@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Api.Analyzers:[2.2.1,2.2.2]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Mvc/src/Microsoft.AspNetCore.Mvc.Api.Analyzers"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Api.Analyzers:[2.2.3,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Mvc/Mvc.Api.Analyzers/src"

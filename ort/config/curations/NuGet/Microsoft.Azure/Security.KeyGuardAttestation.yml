@@ -1,0 +1,13 @@
+- id: "NuGet:Microsoft.Azure:Security.KeyGuardAttestation"
+  curations:
+    comment: |
+      Open source package for which no sources are available.
+    source_code_origins: []
+
+- id: "NuGet:Microsoft.Azure:Security.KeyGuardAttestation"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/Microsoft.Azure.Security.KeyGuardAttestation/1.1.5.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Security.KeyGuardAttestation/1.1.5/license": "MIT"

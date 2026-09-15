@@ -1,0 +1,27 @@
+---
+# Global ORT license choices.
+#
+# These license choices are applied to every scan, instead of being repeated in each project's
+# .ort.yml. They use the same structure as the "license_choices" section of a repository
+# configuration (.ort.yml), see:
+# https://oss-review-toolkit.org/ort/docs/configuration/ort-yml#license-choices
+#
+# Use apply_license_choices.py to merge these into a project's repository configuration before
+# running `ort evaluate` / `ort report`. Project-specific choices in a project's .ort.yml take
+# precedence over the global choices defined here.
+
+# Choices applied to a specific package's license expression, matched by package id.
+package_license_choices:
+- package_id: "PyPI::six:1.17.0"
+  license_choices:
+  - given: "LicenseRef-ort-example-license OR MIT"
+    choice: "MIT"
+
+# Choices applied to the license expression of every package (repository-wide).
+repository_license_choices:
+- given: "Apache-2.0 OR MIT"
+  choice: "MIT"
+- given: "LicenseRef-ort-example-license2 OR MIT"
+  choice: "MIT"
+- given: "LicenseRef-ort-example-license3 OR MIT"
+  choice: "MIT"

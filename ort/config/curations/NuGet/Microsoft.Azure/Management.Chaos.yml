@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Chaos"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/chaos/Microsoft.Azure.Management.Chaos"

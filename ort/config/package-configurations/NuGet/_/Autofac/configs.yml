@@ -1,0 +1,6 @@
+---
+id: "NuGet::Autofac:(,8.0.0]"
+source_code_origin: "VCS"
+path_excludes:
+- pattern: "build/**"
+  reason: "BUILD_TOOL_OF"

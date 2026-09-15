@@ -1,0 +1,11 @@
+- id: "NuGet:Refit:HttpClientFactory:[7.2.22,)"
+  curations:
+    comment: |
+      Mapping declared license based on
+      https://github.com/reactiveui/refit/blob/7.2.22/LICENSE#L1-L23
+      https://github.com/reactiveui/refit/blob/8.0.0/LICENSE#L1-L23
+      https://github.com/reactiveui/refit/blob/v10.2.0/LICENSE#L1-L23
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Refit.HttpClientFactory/7.2.22/license": "MIT"
+      "https://www.nuget.org/packages/Refit.HttpClientFactory/8.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Refit.HttpClientFactory/10.2.0/license": "MIT"

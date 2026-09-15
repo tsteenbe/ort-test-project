@@ -1,0 +1,13 @@
+---
+id: "PyPI::click:(,8.4.2]"
+path_excludes:
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/PKG-INFO"
+  reason: "DATA_FILE_OF"
+  comment: |
+    Package metadata file generated during build. Not included of the distributed runtime artifact.
+- pattern: "**/pyproject.toml"
+  reason: "BUILD_TOOL_OF"

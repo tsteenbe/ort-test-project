@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Cdn"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/cdn/Microsoft.Azure.Management.Cdn"

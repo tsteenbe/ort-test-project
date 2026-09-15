@@ -1,0 +1,11 @@
+---
+id: "NuGet::Scrutor:(,3.3.0]"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.editorconfig"
+  reason: "OTHER"
+- pattern: "**/azure-pipelines.yml"
+  reason: "BUILD_TOOL_OF"

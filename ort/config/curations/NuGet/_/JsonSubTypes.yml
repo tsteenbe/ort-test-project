@@ -1,0 +1,29 @@
+- id: "NuGet::JsonSubTypes"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet::JsonSubTypes:[1.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/manuc66/JsonSubTypes.git"
+
+- id: "NuGet::JsonSubTypes:[1.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "JsonSubTypes"
+
+- id: "NuGet::JsonSubTypes:[1.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/manuc66/JsonSubTypes/blob/v2.0.1/LICENSE#L1-L21
+    declared_license_mapping:
+      "https://www.nuget.org/packages/JsonSubTypes/1.9.0/license": "MIT"
+      "https://www.nuget.org/packages/JsonSubTypes/2.0.1/license": "MIT"

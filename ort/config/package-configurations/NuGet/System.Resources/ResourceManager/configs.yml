@@ -1,0 +1,25 @@
+---
+id: "NuGet:System.Resources:ResourceManager:(,4.3.0]"
+source_code_origin: "ARTIFACT"
+license_finding_curations:
+- path: "System.Resources.ResourceManager.nuspec"
+  start_lines: "10"
+  line_count: 1
+  detected_license: "LicenseRef-scancode-ms-net-library-2018-11"
+  concluded_license: "LicenseRef-scancode-ms-net-library"
+  reason: "INCORRECT"
+  comment: |
+          The license has been corrected to reflect the actual licensing terms of the package.
+          While no preview of the package is available, the binary that contains this file can be accessed at the following link: 
+          https://globalcdn.nuget.org/packages/system.resources.resourcemanager.4.3.0.nupkg?packageVersion=4.3.0
+- path: "ThirdPartyNotices.txt"
+  start_lines: "2"
+  line_count: 30
+  detected_license: "NOASSERTION AND MIT"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+            The principal license of the file is MIT, and the NOASSERTION match is most likely caused by lines 2-6, which quote the following text:
+            "Microsoft licenses these components under the Microsoft .NET Library software license terms.". This text refers to the main license of the package which is already registered.
+            While no preview of the package is available, the binary that contains this filecan be accessed at the following link: 
+            https://globalcdn.nuget.org/packages/system.resources.resourcemanager.4.3.0.nupkg?packageVersion=4.3.0

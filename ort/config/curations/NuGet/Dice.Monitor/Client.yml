@@ -1,0 +1,5 @@
+- id: "NuGet:Dice.Monitor:Client:[1.0.0,)"
+  curations:
+    comment: |
+      Package is proprietary closed-sourced software from a VW group organization.
+    concluded_license: "VW-Group-Proprietary"

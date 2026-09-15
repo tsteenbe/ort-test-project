@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Identity:Abstractions"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/microsoft-identity-abstractions-for-dotnet/blob/12.5.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Identity.Abstractions/12.5.0/license": "MIT"

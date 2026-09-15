@@ -1,0 +1,24 @@
+- id: "NuGet:Microsoft:CodeCoverage"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft:CodeCoverage"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/microsoft/codecoverage.git"
+
+- id: "NuGet:Microsoft:CodeCoverage:17.6.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/Microsoft.CodeCoverage/17.6.0 and
+      https://github.com/microsoft/codecoverage/tree/777e5ffb225c95f489536d42772635b9f14e2ff5.
+    vcs:
+      revision: "777e5ffb225c95f489536d42772635b9f14e2ff5"

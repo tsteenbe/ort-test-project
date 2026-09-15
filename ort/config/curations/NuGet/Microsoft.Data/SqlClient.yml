@@ -1,0 +1,36 @@
+- id: "NuGet:Microsoft.Data:SqlClient"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Data:SqlClient"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/SqlClient/blob/v5.1.7/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Data.SqlClient/5.1.7/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Data.SqlClient/5.2.3/license": "MIT"
+
+- id: "NuGet:Microsoft.Data:SqlClient:[1.1.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/sqlclient.git"
+
+- id: "NuGet:Microsoft.Data:SqlClient:[2.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.Data.SqlClient/src/Microsoft/Data/SqlClient"
+
+- id: "NuGet:Microsoft.Data:SqlClient:[1.1.0,2.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.Data.SqlClient"

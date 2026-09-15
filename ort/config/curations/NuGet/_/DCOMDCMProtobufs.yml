@@ -1,0 +1,16 @@
+- id: "NuGet::DCOMDCMProtobufs"
+  curations:
+    comment: |
+      Package is proprietary closed-sourced software from our organization.
+      See confirmation in https://devstack.vwgroup.com/jira/browse/OSPO-9477?focusedId=30004853&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-30004853.
+      https://devstack.vwgroup.com/jira/browse/OSPO-10147?focusedId=32442360&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-32442360.
+    concluded_license: "LicenseRef-CARIAD-Proprietary"
+    source_code_origins: []
+
+- id: "NuGet::DCOMDCMProtobufs"
+  curations:
+    comment: |
+      Map declared license based on
+      https://devstack.vwgroup.com/jira/browse/OSPO-10147?focusedId=32442360&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-32442360.
+    declared_license_mapping:
+      "https://licenses.nuget.org/Proprietary": "LicenseRef-CARIAD-Proprietary"

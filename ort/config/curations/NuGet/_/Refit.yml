@@ -1,0 +1,9 @@
+- id: "NuGet::Refit"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/reactiveui/refit/blob/54620a8d/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Refit/7.2.22/license": "MIT"
+      "https://www.nuget.org/packages/Refit/8.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Refit/10.2.0/license": "MIT"

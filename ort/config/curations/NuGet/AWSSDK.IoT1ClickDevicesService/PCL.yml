@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.IoT1ClickDevicesService:PCL:[3.3.280,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/IoT1ClickDevicesService"

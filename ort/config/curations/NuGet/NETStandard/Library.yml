@@ -1,0 +1,37 @@
+- id: "NuGet:NETStandard:Library:[2.0.0,2.0.3]"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:NETStandard:Library:[2.0.0,2.0.3]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS url via package registry's License Info link, see https://www.nuget.org/packages/NETStandard.Library.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/standard.git"
+
+- id: "NuGet:NETStandard:Library:[2.0.0,2.0.3]"
+  curations:
+    comment: |
+      Package resides in its own directory within repository.
+    vcs:
+      path: "netstandard"
+
+- id: "NuGet:NETStandard:Library:1.6.1"
+  curations:
+    comment: |
+      Open source package that holds only metadata and by design does not contain any source code.
+      Extracted https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.1 contains
+      file NETStandard.Library.nuspec which only defines depenendencies.
+    is_metadata_only: true
+
+- id: "NuGet:NETStandard:Library:1.6.0"
+  curations:
+    comment: |
+      Open source package that holds only metadata and by design does not contain any source code.
+      Extracted https://www.nuget.org/api/v2/package/NETStandard.Library/1.6.0 only contains
+      file NETStandard.Library.nuspec which only defines depenendencies.
+    is_metadata_only: true

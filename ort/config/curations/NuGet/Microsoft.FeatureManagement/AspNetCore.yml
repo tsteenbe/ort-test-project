@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.FeatureManagement:AspNetCore"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/microsoft/FeatureManagement-Dotnet/blob/4.6.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.FeatureManagement.AspNetCore/4.6.0/license": "MIT"

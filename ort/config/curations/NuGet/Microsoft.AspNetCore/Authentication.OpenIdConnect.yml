@@ -1,0 +1,66 @@
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:[7.0.20,9.0.17]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnetcore.git"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:[7.0.20,9.0.17]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Security/Authentication/OpenIdConnect/src"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/aspnetcore/src/Security/Authentication/OpenIdConnect/src"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:2.1.7"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Security/src/Microsoft.AspNetCore.Authentication.OpenIdConnect"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:2.2.1"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Security/src/Microsoft.AspNetCore.Authentication.OpenIdConnect"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:[2.1.8,2.1.31]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Security/Authentication/OpenIdConnect/src"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.OpenIdConnect:[7.0.20,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/aspnetcore/blob/v7.0.20/LICENSE.txt#L1-L23,
+      https://github.com/dotnet/dotnet/blob/v10.0.0/LICENSE.TXT#L1-L23.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect/7.0.20/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect/10.0.0/license": "MIT"

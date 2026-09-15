@@ -1,0 +1,28 @@
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.Abstractions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.Abstractions"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-functions-dotnet-worker/blob/1.3.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0/license": "MIT"
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.Abstractions:[1.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-functions-dotnet-worker.git"
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.Abstractions:[1.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "extensions/Worker.Extensions.Abstractions"

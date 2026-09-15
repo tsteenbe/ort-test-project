@@ -1,0 +1,14 @@
+- id: "NuGet:Azure.Messaging:EventHubs"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Messaging.EventHubs_5.12.2/sdk/eventhub/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Messaging.EventHubs/5.12.2/license": "MIT"
+
+- id: "NuGet:Azure.Messaging:EventHubs"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/eventhub"

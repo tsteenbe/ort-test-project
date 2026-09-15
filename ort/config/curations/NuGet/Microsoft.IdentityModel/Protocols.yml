@@ -1,0 +1,9 @@
+- id: "NuGet:Microsoft.IdentityModel:Protocols"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/6.35.0/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols/6.35.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols/8.9.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.IdentityModel.Protocols/8.19.2/license": "MIT"

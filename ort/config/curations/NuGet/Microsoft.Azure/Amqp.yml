@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Azure:Amqp"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.7.0/license.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.7.0/license": "MIT"

@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.AI:AnomalyDetector"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/anomalydetector/Azure.AI.AnomalyDetector"

@@ -1,0 +1,38 @@
+- id: "NuGet:Microsoft.AspNetCore:Http:2.2.0"
+  curations:
+    comment: |
+      - Provenance for this version could not be resolved.
+
+      - Scanner is looking for the wrong path (src/Http) inside the repository.
+        This path does not exist in this version of the repository.
+
+      - Correct path is src/Microsoft.AspNetCore.Http:
+        https://github.com/aspnet/HttpAbstractions/tree/2.2.0/src/Microsoft.AspNetCore.Http
+    vcs:
+      type: "Git"
+      url: "https://github.com/aspnet/HttpAbstractions.git"
+      revision: "2.2.0"
+      path: "src/Microsoft.AspNetCore.Http"
+
+- id: "NuGet:Microsoft.AspNetCore:Http:2.2.2"
+  curations:
+    comment: "Provenance for this package could not be resolved"
+    vcs:
+      type: "Git"
+      url: "https://github.com/aspnet/AspNetCore.git"
+      revision: "522705f9a27b99ca4ad261f2e89fe51a77b2338e"
+      path: "src/Http"
+
+- id: "NuGet:Microsoft.AspNetCore:Http:(,2.1.7["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http"
+
+- id: "NuGet:Microsoft.AspNetCore:Http:[2.1.7,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Http"

@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.ManagementPartner"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/managementpartner/Microsoft.Azure.Management.ManagementPartner"

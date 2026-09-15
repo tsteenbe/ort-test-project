@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft:ApplicationInsights:2.23.0"
+  curations:
+    comment: |
+      Map declared license based on
+      Concluded MIT license from https://github.com/microsoft/ApplicationInsights-dotnet/blob/2.23.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.ApplicationInsights/2.23.0/license": "MIT"

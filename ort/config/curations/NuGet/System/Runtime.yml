@@ -1,0 +1,51 @@
+- id: "NuGet:System:Runtime"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System:Runtime"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System:Runtime"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Runtime/src"
+
+- id: "NuGet:System:Runtime:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Runtime/4.3.0 and
+      https://github.com/dotnet/corefx/commit/b9b53c8efa4b259312f8997c86dcfb11083f88ab.
+    vcs:
+      revision: "b9b53c8efa4b259312f8997c86dcfb11083f88ab"
+
+- id: "NuGet:System:Runtime:4.3.1"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Runtime/4.3.1 and
+      https://github.com/dotnet/corefx/commit/31197b196736a5fa85e4f27dabcc831eef00719e
+    vcs:
+      revision: "31197b196736a5fa85e4f27dabcc831eef00719e"
+
+- id: "NuGet:System:Runtime:4.3.1"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/System.Runtime/4.3.1 and
+      https://github.com/dotnet/corefx/blob/31197b196736a5fa85e4f27dabcc831eef00719e/LICENSE.
+    declared_license_mapping:
+      "LicenseRef-scancode-ms-net-library-2019-06": "MIT"

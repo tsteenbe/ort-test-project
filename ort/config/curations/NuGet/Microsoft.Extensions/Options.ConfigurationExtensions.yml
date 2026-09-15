@@ -1,0 +1,51 @@
+- id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.extensions.options.configurationextensions/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/Microsoft.Extensions.Options.ConfigurationExtensions/src"
+
+- id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.extensions.options.configurationextensions/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/Microsoft.Extensions.Options.ConfigurationExtensions/src"
+
+- id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v9.0.12/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v10.0.0/LICENSE.TXT and
+      https://github.com/dotnet/dotnet/blob/v10.0.9/src/runtime/LICENSE.TXT#L1-L23.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions/9.0.12/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions/10.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions/10.0.9/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions/10.0.10/license": "MIT"

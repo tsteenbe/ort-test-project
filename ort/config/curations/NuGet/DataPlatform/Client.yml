@@ -1,0 +1,4 @@
+- id: "NuGet:DataPlatform:Client:1.0.0"
+  curations:
+    comment: "The artifact is self developed by project team"
+    concluded_license: "VW-Group-Proprietary"

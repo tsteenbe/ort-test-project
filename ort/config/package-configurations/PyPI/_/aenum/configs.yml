@@ -1,0 +1,23 @@
+---
+id: "PyPI::aenum:(,3.1.17]"
+path_excludes:
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CHANGES"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/PKG-INFO"
+  reason: "DATA_FILE_OF"
+  comment: |
+    Package metadata file generated during build. Not included of the distributed runtime artifact.
+- pattern: "**/setup.cfg"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/setup.py"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/test.py"
+  reason: "TEST_OF"
+license_finding_curations:
+  - path: "aenum-3.1.16/aenum/LICENSE"
+    reason: "INCORRECT"
+    comment: |
+      Changes for debugging purposes only.
+    concluded_license: "(Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-Source-Code AND CC0-1.0 AND EPL-2.0 AND LicenseRef-scancode-public-domain AND LicenseRef-scancode-public-domain-disclaimer AND MIT AND OpenSSL AND snprintf) OR (Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-Source-Code AND CC0-1.0 AND LicenseRef-scancode-public-domain AND LicenseRef-scancode-public-domain-disclaimer AND MIT AND OpenSSL AND snprintf)"

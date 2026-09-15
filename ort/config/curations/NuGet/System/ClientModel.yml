@@ -1,0 +1,32 @@
+- id: "NuGet:System:ClientModel"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System:ClientModel"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:System:ClientModel"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/core/System.ClientModel/src"
+
+- id: "NuGet:System:ClientModel"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/System.ClientModel_1.9.0/LICENSE.txt,
+      https://github.com/Azure/azure-sdk-for-net/blob/System.ClientModel_1.11.0/LICENSE.txt#L1-L21.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.ClientModel/1.9.0/license": "MIT"
+      "https://www.nuget.org/packages/System.ClientModel/1.10.0/license": "MIT"
+      "https://www.nuget.org/packages/System.ClientModel/1.11.0/license": "MIT"
+      "https://www.nuget.org/packages/System.ClientModel/1.14.0/license": "MIT"

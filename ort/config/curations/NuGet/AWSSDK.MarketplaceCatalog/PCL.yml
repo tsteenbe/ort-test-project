@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.MarketplaceCatalog:PCL:[3.3.629,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/MarketplaceCatalog"

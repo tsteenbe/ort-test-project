@@ -1,0 +1,13 @@
+- id: "NuGet:Microsoft.AspNetCore:Hosting.Server.Abstractions:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Hosting/Server.Abstractions/src"
+
+- id: "NuGet:Microsoft.AspNetCore:Hosting.Server.Abstractions:(,3.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Hosting.Server.Abstractions"

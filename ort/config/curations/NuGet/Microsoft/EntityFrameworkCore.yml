@@ -1,0 +1,46 @@
+- id: "NuGet:Microsoft:EntityFrameworkCore"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft:EntityFrameworkCore"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/efcore/blob/v8.0.23/LICENSE.txt
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/7.0.20/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/8.0.23/license": "MIT"
+
+- id: "NuGet:Microsoft:EntityFrameworkCore:[10.0.4,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.EntityFrameworkCore
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft:EntityFrameworkCore:[10.0.4,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/aspnetcore/src/Identity/EntityFrameworkCore/src"
+
+- id: "NuGet:Microsoft:EntityFrameworkCore:[2.0.1,10.0.4["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.EntityFrameworkCore
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/efcore.git"
+
+- id: "NuGet:Microsoft:EntityFrameworkCore:[2.0.1,10.0.4["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/EFCore"

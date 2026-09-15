@@ -1,0 +1,13 @@
+- id: "NuGet:ChilliCream.Nitro:App"
+  curations:
+    comment: |
+      Third party proprietary closed-sourced package for which no sources are available.
+    source_code_origins: []
+
+- id: "NuGet:ChilliCream.Nitro:App"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/ChilliCream.Nitro.App/32.0.0-insider.18/License.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/ChilliCream.Nitro.App/28.0.7/license": "LicenseRef-scancode-chillicream-1.0"

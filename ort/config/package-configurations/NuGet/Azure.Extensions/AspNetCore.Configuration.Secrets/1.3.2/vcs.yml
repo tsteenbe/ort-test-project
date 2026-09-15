@@ -1,0 +1,122 @@
+---
+id: "NuGet:Azure.Extensions:AspNetCore.Configuration.Secrets:1.3.2"
+source_code_origin: VCS
+license_finding_curations:
+- path: "eng/common/spelling/package-lock.json"
+  start_lines: "144"
+  line_count: 1755
+  detected_license: "NOASSERTION"
+  concluded_license: "NONE"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    No license information found in the specified lines. 
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/eng/common/spelling/package-lock.json#L144-L1898
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/ArmComputeModelFactory.cs"
+  start_lines: "2"
+  line_count: 3820
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/compute/Azure.ResourceManager.Compute/src/Generated/ArmComputeModelFactory.cs#L1-L2
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/CommunityGalleryImageData.cs"
+  start_lines: "2"
+  line_count: 93
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/compute/Azure.ResourceManager.Compute/src/Generated/CommunityGalleryImageData.cs#L1-L2
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryInfo.cs"
+  start_lines: "2"
+  line_count: 76
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryInfo.cs#L1-L2   
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/SharedGalleryImageData.cs"
+  start_lines: "2"
+  line_count: 90
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/compute/Azure.ResourceManager.Compute/src/Generated/SharedGalleryImageData.cs#L1-L2 
+- path: "sdk/containerregistry/Azure.Containers.ContainerRegistry/src/Generated/Models/OciAnnotations.cs"
+  start_lines: "2"
+  line_count: 46
+  detected_license: "MIT AND NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/containerregistry/Azure.Containers.ContainerRegistry/src/Generated/Models/OciAnnotations.cs#L1-L2
+- path: "**/README.md"
+  detected_license: "NOASSERTION AND LicenseRef-scancode-google-cla"
+  concluded_license: "LicenseRef-scancode-google-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/README.md?plain=1#L74-L80
+- path: "sdk/healthdataaiservices/Azure.Health.Deidentification/src/Generated/PhiCategory.cs"
+  start_lines: "2"
+  line_count: 40
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.'see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/healthdataaiservices/Azure.Health.Deidentification/src/Generated/PhiCategory.cs#L1-L2
+- path: "sdk/webpubsub/Microsoft.Azure.WebPubSub.Common/src/Shared/WebPubSubStatusCode.cs"
+  start_lines: "2"
+  line_count: 6
+  detected_license: "(AGPL-3.0-or-later OR BSD-3-Clause) AND CC-BY-SA-4.0"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.'see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/webpubsub/Microsoft.Azure.WebPubSub.Common/src/Shared/WebPubSubStatusCode.cs#L1-L2
+    no other license infromation found.
+- path: "**/README.md"
+  detected_license: "NOASSERTION"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on contributor license agreement text:
+    'This project welcomes contributions and suggestions. Most contributions require you to agree to a 
+    Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+    the rights to use your contribution. For details, visit https://cla.microsoft.com.' See file in
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/README.md?plain=1#L74-L84
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryMetadata.cs"
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.'see file 
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryMetadata.cs#L2-L88
+    no license information about LicenseRef-scancode-proprietary-license
+- path: "sdk/servicebus/Microsoft.Azure.WebJobs.Extensions.ServiceBus/stylecop.json"
+  start_lines: "12"
+  line_count: 1
+  detected_license: "MIT AND RPL-1.5"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.'see file  
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/servicebus/Microsoft.Azure.WebJobs.Extensions.ServiceBus/stylecop.json#L12 
+    no license information about RPL-1.5
+- path: "sdk/eventhub/Microsoft.Azure.WebJobs.Extensions.EventHubs/stylecop.json"
+  start_lines: "5"
+  line_count: 1
+  detected_license: "MIT AND RPL-1.5"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Licensed under the MIT License.' see file
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.3.2/sdk/eventhub/Microsoft.Azure.WebJobs.Extensions.EventHubs/stylecop.json#L5
+    no license information about RPL-1.5

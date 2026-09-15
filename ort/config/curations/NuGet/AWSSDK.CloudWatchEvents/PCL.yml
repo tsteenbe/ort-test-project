@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.CloudWatchEvents:PCL:[3.1.38,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/CloudWatchEvents"

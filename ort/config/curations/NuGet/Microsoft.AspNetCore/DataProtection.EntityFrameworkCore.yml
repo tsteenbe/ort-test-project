@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:DataProtection.EntityFrameworkCore:[2.2.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/DataProtection/EntityFrameworkCore/src"

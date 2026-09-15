@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.IoT:DeviceUpdate"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/deviceupdate/Azure.IoT.DeviceUpdate"

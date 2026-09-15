@@ -1,0 +1,13 @@
+---
+id: "NuGet:Polly.Extensions:Http:(,3.0.0]"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CHANGELOG*"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CODE_OF_CONDUCT.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/build.bat"
+  reason: "BUILD_TOOL_OF"

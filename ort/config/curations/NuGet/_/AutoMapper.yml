@@ -1,0 +1,30 @@
+- id: "NuGet::AutoMapper"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet::AutoMapper:[7.0.1,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/LuckyPennySoftware/AutoMapper.git"
+
+- id: "NuGet::AutoMapper:[7.0.1,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/AutoMapper"
+
+- id: "NuGet::AutoMapper:[10.1.1,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/LuckyPennySoftware/AutoMapper/blob/v10.1.1/LICENSE.txt#L1-L9.
+      https://github.com/LuckyPennySoftware/AutoMapper/blob/v12.0.1/LICENSE.txt#L1-L9
+    declared_license_mapping:
+      "https://www.nuget.org/packages/AutoMapper/10.1.1/license": "MIT"
+      "https://www.nuget.org/packages/AutoMapper/12.0.1/license": "MIT"

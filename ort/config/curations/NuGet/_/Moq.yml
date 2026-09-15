@@ -1,0 +1,7 @@
+- id: "NuGet::Moq"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/devlooped/moq/blob/v4.20.71/License.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Moq/4.20.72/license": "BSD-3-Clause"

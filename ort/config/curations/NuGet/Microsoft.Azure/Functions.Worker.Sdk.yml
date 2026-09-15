@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Sdk:2.0.0"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-functions-dotnet-worker/blob/sdk-2.0.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/2.0.0/license": "MIT"

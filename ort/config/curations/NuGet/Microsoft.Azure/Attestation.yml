@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Attestation"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/attestation/Microsoft.Azure.Attestation"

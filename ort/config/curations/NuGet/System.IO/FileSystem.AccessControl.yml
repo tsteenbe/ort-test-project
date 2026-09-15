@@ -1,0 +1,37 @@
+- id: "NuGet:System.IO:FileSystem.AccessControl"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.IO:FileSystem.AccessControl"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/corefx/blob/0f7f38c4fd323b26da10cce95f857f77f0f09b48/LICENSE.TXT
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.IO.FileSystem.AccessControl/4.7.0/license": "MIT"
+
+- id: "NuGet:System.IO:FileSystem.AccessControl:[4.7.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.IO:FileSystem.AccessControl:[4.7.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.IO.FileSystem.AccessControl/src"
+
+- id: "NuGet:System.IO:FileSystem.AccessControl:4.7.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      Found revision by browsing release date history, see
+      https://github.com/dotnet/corefx/tree/0f7f38c4fd323b26da10cce95f857f77f0f09b48
+    vcs:
+      revision: "0f7f38c4fd323b26da10cce95f857f77f0f09b48"

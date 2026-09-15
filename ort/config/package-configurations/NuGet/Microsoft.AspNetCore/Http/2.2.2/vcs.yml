@@ -1,0 +1,9 @@
+---
+id: "NuGet:Microsoft.AspNetCore:Http:2.2.2"
+source_code_origin: "VCS"
+path_excludes:
+- pattern: "src/Http/Http.Extensions/test/**"
+  reason: "TEST_OF"
+  comment: "Exclude the test folder, as it contains test files"
+- pattern: "src/Http/Routing/test/**"
+  reason: "TEST_OF"

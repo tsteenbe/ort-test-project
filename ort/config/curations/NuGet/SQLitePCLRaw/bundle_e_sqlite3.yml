@@ -1,0 +1,28 @@
+- id: "NuGet:SQLitePCLRaw:bundle_e_sqlite3"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:SQLitePCLRaw:bundle_e_sqlite3"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlite3/2.1.4/license.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlite3/2.1.4/license": "Apache-2.0"
+
+- id: "NuGet:SQLitePCLRaw:bundle_e_sqlite3"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlite3.
+    vcs:
+      type: "Git"
+      url: "https://github.com/ericsink/SQLitePCL.raw.git"
+
+- id: "NuGet:SQLitePCLRaw:bundle_e_sqlite3"
+  curations:
+    comment: |
+      Open source package that holds only metadata and by design does not contain any source code.
+    is_metadata_only: true

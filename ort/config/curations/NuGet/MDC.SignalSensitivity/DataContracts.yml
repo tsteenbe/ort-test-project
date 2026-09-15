@@ -1,0 +1,5 @@
+- id: "NuGet:MDC.SignalSensitivity:DataContracts"
+  curations:
+    comment: |
+      Concluding the license based on project team input https://devstack.vwgroup.com/jira/browse/OSPO-3547?focusedId=28601586&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-28601586
+    concluded_license: "LicenseRef-CARIAD-Proprietary"

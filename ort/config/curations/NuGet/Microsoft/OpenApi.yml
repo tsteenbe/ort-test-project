@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft:OpenApi"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Microsoft/OpenAPI.NET/blob/v2.7.5/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.OpenApi/2.7.5/license": "MIT"

@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Identity:Client.KeyAttestation"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/blob/4.86.1/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Identity.Client.KeyAttestation/4.86.1/license": "MIT"

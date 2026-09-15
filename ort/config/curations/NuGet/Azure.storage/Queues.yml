@@ -1,0 +1,29 @@
+- id: "NuGet:Azure.Storage:Queues"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Azure.Storage:Queues"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.netcore.platforms.
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:Azure.Storage:Queues"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/storage/Azure.Storage.Queues/src"
+
+- id: "NuGet:Azure.Storage:Queues:[12.20.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Queues_12.27.0/LICENSE.txt#L1-L21.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Storage.Queues/12.27.0/license": "MIT"

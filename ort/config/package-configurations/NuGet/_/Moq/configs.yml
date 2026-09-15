@@ -1,0 +1,9 @@
+---
+id: "NuGet::Moq:(,4.20.72]"
+source_code_origin: "VCS"
+path_excludes:
+- pattern: "changelog.md"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+            The file is named "changelog.md" and contains the change log of the project, which is documentation and thus not part of final deliverable.
+            The file can be consulted here: https://github.com/devlooped/moq/blob/v4.20.72/changelog.md

@@ -1,0 +1,14 @@
+- id: "NuGet::DCOMMessageModel"
+  curations:
+    comment: |
+      Map declared license; package is proprietary closed-source software from our organization.
+    declared_license_mapping:
+      "https://licenses.nuget.org/Proprietary": "LicenseRef-CARIAD-Proprietary"
+
+- id: "NuGet::DCOMMessageModel"
+  curations:
+    comment: |
+      Package is proprietary closed-sourced software from our organization.
+      See confirmation in https://devstack.vwgroup.com/jira/browse/OSPO-3170?focusedId=32287940&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-32287940.
+    concluded_license: "LicenseRef-CARIAD-Proprietary"
+    source_code_origins: []

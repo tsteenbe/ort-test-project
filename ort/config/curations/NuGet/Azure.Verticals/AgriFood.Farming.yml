@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.Verticals:AgriFood.Farming"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/agrifood/Azure.Verticals.AgriFood.Farming"

@@ -1,0 +1,15 @@
+---
+id: "NuGet:Swashbuckle.AspNetCore:Filters.Abstractions:(,10.0.1]"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*Example*/**"
+  reason: "EXAMPLE_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.editorconfig"
+  reason: "OTHER"
+- pattern: "**/CHANGELOG*"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/tools/**"
+  reason: "BUILD_TOOL_OF"

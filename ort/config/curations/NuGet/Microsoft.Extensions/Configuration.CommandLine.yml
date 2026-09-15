@@ -1,0 +1,87 @@
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.extensions.configuration.commandline/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/Microsoft.Extensions.Configuration.CommandLine/src"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.0/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v10.0.9/src/runtime/LICENSE.TXT#L1-L23.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Configuration.CommandLine/10.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Configuration.CommandLine/10.0.9/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Configuration.CommandLine/10.0.10/license": "MIT"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.extensions.configuration.commandline/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/Microsoft.Extensions.Configuration.CommandLine/src"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:[2.2.0,5.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.extensions.configuration.commandline/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/extensions.git"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:[2.2.0,5.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Configuration/Config.CommandLine/src"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:(,2.2.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/microsoft.extensions.configuration.commandline/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/aspnet/configuration.git"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:]2.0.0,2.2.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Config.CommandLine"
+
+- id: "NuGet:Microsoft.Extensions:Configuration.CommandLine:(,2.0.0]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.Extensions.Configuration.CommandLine"

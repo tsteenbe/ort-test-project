@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Data:Sqlite.Core"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/efcore/blob/v7.0.20/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Data.Sqlite.Core/7.0.20/license": "MIT"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:ChimeSDKMeetings:[3.7.151,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ChimeSDKMeetings"

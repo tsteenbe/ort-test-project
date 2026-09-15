@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Batch.FileStaging"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/batch/Microsoft.Azure.Batch.FileStaging"

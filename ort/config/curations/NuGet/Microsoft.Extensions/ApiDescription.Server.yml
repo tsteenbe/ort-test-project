@@ -1,0 +1,43 @@
+- id: "NuGet:Microsoft.Extensions:ApiDescription.Server"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Extensions:ApiDescription.Server"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.0/src/aspnetcore/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.ApiDescription.Server/10.0.0/license": "MIT"
+
+- id: "NuGet:Microsoft.Extensions:ApiDescription.Server:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.Extensions:ApiDescription.Server:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/aspnetcore/src/Tools/Extensions.ApiDescription.Server/src"
+
+- id: "NuGet:Microsoft.Extensions:ApiDescription.Server:[3.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnetcore.git"
+
+- id: "NuGet:Microsoft.Extensions:ApiDescription.Server:[3.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Tools/Extensions.ApiDescription.Server/src"

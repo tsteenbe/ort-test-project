@@ -1,0 +1,45 @@
+[package]
+name = "rest-api"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.74"
+description = "A mock REST API service used to produce ORT analyzer results for testing."
+homepage = "https://github.com/tsteenbe/ort-test-project/tree/main/test-project/rest-api"
+repository = "https://github.com/tsteenbe/ort-test-project"
+readme = "README.md"
+license = "BSD-2-Clause"
+authors = [
+    "Dev E <dev.e@example.org>",
+    "Dev F <dev.f@example.org>",
+]
+keywords = ["rest", "api", "http", "mock"]
+categories = ["web-programming::http-server"]
+publish = false
+
+[[bin]]
+name = "rest-api"
+path = "src/main.rs"
+
+[dependencies]
+# Incremental HTTP request parser, no transitive dependencies.
+httparse = "1.9.5"
+
+# RFC 7231 date formatting for the "Date" response header, no transitive dependencies.
+httpdate = "1.0.3"
+
+# Query string parsing, pulls in exactly one transitive dependency: percent-encoding.
+form_urlencoded = "1.2.1"
+
+# Logging facade, no transitive dependencies with the default features.
+log = { version = "0.4.22", default-features = false }
+
+# Minimal JSON parser and serializer, no transitive dependencies.
+tinyjson = "2.5.1"
+
+[dev-dependencies]
+# Readable assertion diffs, pulls in two transitive dependencies: diff and yansi.
+pretty_assertions = "1.4.1"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

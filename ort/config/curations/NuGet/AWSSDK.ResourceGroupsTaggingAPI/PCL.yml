@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.ResourceGroupsTaggingAPI:PCL:[3.3.70,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ResourceGroupsTaggingAPI"

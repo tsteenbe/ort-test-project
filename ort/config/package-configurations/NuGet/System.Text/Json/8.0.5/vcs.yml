@@ -1,0 +1,21 @@
+---
+id: "NuGet:System.Text:Json:8.0.5"
+vcs:
+  type: "Git"
+  url: "https://github.com/dotnet/runtime.git"
+  revision: "81cabf2857a01351e5ab578947c7403a5b128ad1"
+license_finding_curations:
+- path: "src/libraries/System.Text.Json/roadmap/images/core-components.txt"
+  start_lines: "1"
+  line_count: 4
+  detected_license: "MIT AND NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: "Based on the investigation license identified as MIT license"
+- path: "src/libraries/System.Text.Json/roadmap/images/higher-level-components.txt"
+  start_lines: "1"
+  line_count: 4
+  detected_license: "MIT AND NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: "Based on the investigation license identified as MIT license"

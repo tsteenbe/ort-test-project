@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:App:[2.1.0,2.1.5]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.App"
+- id: "NuGet:Microsoft.AspNetCore:App:[2.1.6,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Packages/Microsoft.AspNetCore.App"

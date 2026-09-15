@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.PI:PCL:[3.3.289,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/PI"

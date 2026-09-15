@@ -1,0 +1,6 @@
+- id: "NuGet:WebJobs.Extensions:AuthenticationEvents"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/entra/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:CloudFormation:[3.0.4,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/CloudFormation"

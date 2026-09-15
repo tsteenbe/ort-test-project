@@ -1,0 +1,14 @@
+---
+id: "NuGet:Newtonsoft:Json:13.0.3"
+vcs:
+  type: "Git"
+  url: "https://github.com/JamesNK/Newtonsoft.Json.git"
+  revision: "0a2e291c0d9c0c7675d445703e51750363a549ef"
+license_finding_curations:
+- path: "CONTRIBUTING.md"
+  start_lines: "9"
+  line_count: 77
+  detected_license: "NOASSERTION AND LicenseRef-scancode-newton-king-cla"
+  concluded_license: "LicenseRef-scancode-newton-king-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: "True Positive"

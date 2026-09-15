@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Extensions:Caching.Hybrid"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/extensions/blob/v10.8.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Caching.Hybrid/10.8.0/license": "MIT"

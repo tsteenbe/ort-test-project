@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:MigrationHubConfig:[3.3.635,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/MigrationHubConfig"

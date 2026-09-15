@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:Detective:[3.3.649,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Detective"

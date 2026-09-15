@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:Budgets:[3.3.13,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Budgets"

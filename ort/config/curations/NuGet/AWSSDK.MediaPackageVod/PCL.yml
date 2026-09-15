@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.MediaPackageVod:PCL:[3.3.514,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/MediaPackageVod"

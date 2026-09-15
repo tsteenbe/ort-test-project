@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.ApiGatewayV2:CoreCLR:[3.3.430,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ApiGatewayV2"

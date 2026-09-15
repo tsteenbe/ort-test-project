@@ -1,0 +1,28 @@
+- id: "NuGet:Azure.Messaging:EventHubs.Processor"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Azure.Messaging:EventHubs.Processor"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:Azure.Messaging:EventHubs.Processor"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/eventhub/Azure.Messaging.EventHubs.Processor/src"
+
+- id: "NuGet:Azure.Messaging:EventHubs.Processor:[5.12.2,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Messaging.EventHubs.Processor_5.12.2/LICENSE.txt#L1-L21
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Messaging.EventHubs.Processor/5.12.2/license": "MIT"

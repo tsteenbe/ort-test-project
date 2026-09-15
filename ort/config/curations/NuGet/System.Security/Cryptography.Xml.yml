@@ -1,0 +1,29 @@
+- id: "NuGet:System.Security:Cryptography.Xml:[5.0.0,9.0.15]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/system.security.cryptography.xml
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+      path: "src/libraries/System.Security.Cryptography.Xml/src"
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Security:Cryptography.Xml"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.7/src/runtime/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Security.Cryptography.Xml/10.0.7/license": "MIT"
+
+- id: "NuGet:System.Security:Cryptography.Xml:[10.0.0,10.0.7]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/system.security.cryptography.xml
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+      path: "src/runtime/src/libraries/System.Security.Cryptography.Xml/src"
+    source_code_origins: [VCS]

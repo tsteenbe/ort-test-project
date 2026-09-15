@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:CodeCatalyst:[3.7.429,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/CodeCatalyst"

@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.Security:ConfidentialLedger"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/confidentialledger/Azure.Security.ConfidentialLedger"

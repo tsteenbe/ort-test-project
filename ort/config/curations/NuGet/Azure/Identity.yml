@@ -1,0 +1,46 @@
+- id: "NuGet:Azure:Identity"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Azure:Identity"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/75fb76b92b160a9b4566ec0f2956ba1da1101b23/LICENSE.txt.
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.17.1/LICENSE.txt
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Identity/1.12.0/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Identity/1.17.1/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Identity/1.21.0/license": "MIT"
+
+- id: "NuGet:Azure:Identity:[1.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Azure.Identity
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:Azure:Identity:[1.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/identity/Azure.Identity/src"
+
+- id: "NuGet:Azure:Identity:1.17.1"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "Azure.Identity_1.17.1"
+
+- id: "NuGet:Azure:Identity:1.12.0"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "Azure.Identity_1.12.0"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:ForecastService:[3.3.573,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ForecastService"

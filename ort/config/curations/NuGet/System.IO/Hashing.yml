@@ -1,0 +1,45 @@
+- id: "NuGet:System.IO:Hashing"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.IO:Hashing:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:System.IO:Hashing:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/System.Private.CoreLib/src"
+
+- id: "NuGet:System.IO:Hashing:[6.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.IO:Hashing:[6.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.IO.Hashing/src"
+
+- id: "NuGet:System.IO:Hashing:[6.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.3/LICENSE.TXT#L1-L23
+      https://github.com/dotnet/runtime/blob/v6.0.0/LICENSE.TXT#L1-L23
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.IO.Hashing/10.0.3/license": "MIT"
+      "https://www.nuget.org/packages/System.IO.Hashing/6.0.0/license": "MIT"

@@ -1,0 +1,6 @@
+id: "NuGet:Microsoft.Extensions:Options.ConfigurationExtensions:[10.0.2,)"
+source_code_origin: VCS
+path_excludes:
+  - pattern: "src/roslyn/src/Compilers/Test/Resources/Core/WinRt/Windows.ildump"
+    reason: "OTHER"
+    comment: "Excluded due to ScanCode timeout (known large test data file)"

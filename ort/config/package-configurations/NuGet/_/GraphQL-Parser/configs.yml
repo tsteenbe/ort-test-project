@@ -1,0 +1,13 @@
+---
+id: "NuGet::GraphQL-Parser:(,9.5.1]"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*Bench*/**"
+  reason: "TEST_OF"
+- pattern: "**/*Test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.editorconfig"
+  reason: "OTHER"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"

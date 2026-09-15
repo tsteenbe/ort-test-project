@@ -1,0 +1,24 @@
+- id: "NuGet:Microsoft.NET:Http.Headers:(,2.1.14["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.NET.Http.Headers"
+- id: "NuGet:Microsoft.NET:Http.Headers:2.1.14"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Http/Headers/src"
+- id: "NuGet:Microsoft.NET:Http.Headers:2.2.0"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.NET.Http.Headers"
+- id: "NuGet:Microsoft.NET:Http.Headers:[2.2.8,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Http/Headers/src"

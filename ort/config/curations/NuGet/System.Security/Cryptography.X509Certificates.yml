@@ -1,0 +1,51 @@
+- id: "NuGet:System.Security:Cryptography.X509Certificates"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Security:Cryptography.X509Certificates"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.Security:Cryptography.X509Certificates"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Security.Cryptography.X509Certificates/src"
+
+- id: "NuGet:System.Security:Cryptography.X509Certificates:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.X509Certificates/4.3.0 and
+      https://github.com/dotnet/corefx/commit/b9b53c8efa4b259312f8997c86dcfb11083f88ab.
+    vcs:
+      revision: "b9b53c8efa4b259312f8997c86dcfb11083f88ab"
+
+- id: "NuGet:System.Security:Cryptography.X509Certificates:4.3.2"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.X509Certificates/4.3.2 and
+      https://github.com/dotnet/corefx/commit/de23c6fee76e8895a73b6980dbaf17bf83f43b6c.
+    vcs:
+      revision: "de23c6fee76e8895a73b6980dbaf17bf83f43b6c"
+
+- id: "NuGet:System.Security:Cryptography.X509Certificates:[4.1.0,4.3.2]"
+  curations:
+    comment: |
+      Map declared license based on
+      system.security.cryptography.x509certificates.4.3.2.nupkg/dotnet_library_license.txt and
+      https://www.nuget.org/api/v2/package/System.Security.Cryptography.X509Certificates/4.3.2.
+    declared_license_mapping:
+      LicenseRef-scancode-ms-net-library-2019-06 : "LicenseRef-scancode-ms-net-library"

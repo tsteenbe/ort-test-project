@@ -1,0 +1,423 @@
+---
+id: "NuGet:Azure:Identity:[1.0.0,1.17.1]"
+source_code_origin: VCS
+path_excludes:
+- pattern: "sdk/core/Azure.Core/tests/common/TestData/ResourceProviderData/ResourceProviderData-Collapsed.json"
+  reason: "OTHER"
+  comment: |
+    Excluded sdk/core/Azure.Core/tests/common/TestData/ResourceProviderData/ResourceProviderData-Collapsed.json due to a timeout error.
+- pattern: "sdk/core/System.ClientModel/tests/client/TestData/ResourceProviderData/ResourceProviderData-Collapsed.json"
+  reason: "OTHER"
+  comment: |
+    Excluded sdk/core/System.ClientModel/tests/client/TestData/ResourceProviderData/ResourceProviderData-Collapsed.json due to a timeout error.
+- pattern: "sdk/compute/Microsoft.Azure.Management.Compute/tests/**"
+  reason: "TEST_OF"
+- pattern: "**/tests/**"
+  reason: "TEST_OF"
+- pattern: "doc/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "samples/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "tools/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "sdk/schemaregistry/Azure.Data.SchemaRegistry/samples/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CONTRIBUTING.md" 
+  reason: "DOCUMENTATION_OF"
+  comment: "CONTRIBUTING.md is excluded from assessment here because the file is not applicable in the present case as the package is not considered in contribution context." 
+license_finding_curations:
+- path: "sdk/eventhub/Microsoft.Azure.WebJobs.Extensions.EventHubs/stylecop.json"
+  start_lines: "5"
+  line_count: 1
+  detected_license: "MIT AND RPL-1.5"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT 
+    Path- https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/eventhub/Microsoft.Azure.WebJobs.Extensions.EventHubs/stylecop.json#L5
+- path: "sdk/servicebus/Microsoft.Azure.WebJobs.Extensions.ServiceBus/stylecop.json"
+  start_lines: "12"
+  line_count: 1
+  detected_license: "MIT AND RPL-1.5"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT 
+    Path- https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/servicebus/Microsoft.Azure.WebJobs.Extensions.ServiceBus/stylecop.json#L12
+- path: "sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.ResourceDetectors.Azure/AppServiceResourceDetector.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path- https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.ResourceDetectors.Azure/AppServiceResourceDetector.cs#L2
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/Utilities/**"
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path- https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/Utilities/BlobUtils.cs#L1-L13
+- path: "sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.Instrumentation.SqlClient/Implementation/**"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.Instrumentation.SqlClient/Implementation/SqlActivitySourceHelper.cs#L1-L2
+- path: "sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/Shared/**"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/Shared/Shims/IsExternalInit.cs#L2
+- path: "sdk/batch/Microsoft.Azure.Batch.FileStaging/src/SequentialFileStaging.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.FileStaging/src/SequentialFileStaging.cs#L3-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.FileStaging/src/SequentialFileStagingArtifact.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.FileStaging/src/SequentialFileStagingArtifact.cs#L3-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.FileStaging/src/AssemblyAttributes.cs"
+  start_lines: "3"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.FileStaging/src/AssemblyAttributes.cs#L3-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.FileStaging/src/FileStagingNamingHelpers.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.FileStaging/src/FileStagingNamingHelpers.cs#L3-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/Properties/AssemblyInfo.cs"
+  start_lines: "3"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/Properties/AssemblyInfo.cs#L3-L6
+- path: "sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.ResourceDetectors.Azure/**"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.ResourceDetectors.Azure/AppServiceResourceDetector.cs#L2
+- path: "sdk/entra/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents/src/Help/WebJobsExtensionsAuthenticationEvents.chm/scripts/branding.js"
+  start_lines: "12"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "NONE"
+  reason: "DOCUMENTATION_OF"
+  comment: "False Positive"
+- path: "sdk/core/Azure.Core/src/Shared/ValueStopwatch.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/core/Azure.Core/src/Shared/ValueStopwatch.cs#L2-L3
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/CloudJobExtensions.cs"
+  start_lines: "4"
+  line_count: 5
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/CloudJobExtensions.cs#L1-L8
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/CloudTaskExtensions.cs"
+  start_lines: "4"
+  line_count: 5
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/CloudTaskExtensions.cs#L3-L8
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/IOutputKind.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/IOutputKind.cs#L1-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/ITrackedSaveOperation.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/ITrackedSaveOperation.cs#L2-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/JobOutputKind.cs"
+  start_lines: "3"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/JobOutputKind.cs#L2-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/OutputFileReference.cs"
+  start_lines: "3"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/OutputFileReference.cs#L3-L6
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/StoragePath.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path- https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/StoragePath.cs#L2-L3
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/TaskOutputKind.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/TaskOutputKind.cs#L2-L3
+- path: "sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/TrackedFile.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch.Conventions.Files/src/TrackedFile.cs#L2-L3
+- path: "sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.Instrumentation.SqlClient/**"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/Vendoring/OpenTelemetry.Instrumentation.SqlClient/SqlClientInstrumentation.cs#L2
+- path: "sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchConstants.cs"
+  start_lines: "5"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch/src/Protocol/BatchConstants.cs#L5-L8
+- path: "sdk/batch/Microsoft.Azure.Batch/src/Auth/BatchCredentials.cs"
+  start_lines: "5"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch/src/Auth/BatchCredentials.cs#L5-L8
+- path: "sdk/batch/Microsoft.Azure.Batch/src/Common/BatchErrorCodeStrings.cs"
+  start_lines: "8"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch/src/Common/BatchErrorCodeStrings.cs#L8-L11
+- path: "sdk/batch/Microsoft.Azure.Batch/CHANGELOG.md"
+  start_lines: "361"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch/CHANGELOG.md?plain=1#L361
+- path: "sdk/batch/Microsoft.Azure.Batch/src/Protocol/LogLevel.cs"
+  start_lines: "5"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch/src/Protocol/LogLevel.cs#L5-L8
+- path: "sdk/batch/Microsoft.Azure.Batch/src/Protocol/StagingStorageAccount.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: "Based on the investigation license identified as Apache-2.0"
+- path: "NOTICE.txt"
+  start_lines: "29"
+  line_count: 219
+  detected_license: "NOASSERTION"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as Apache-2.0 
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/NOTICE.txt#L29-L219
+- path: "sdk/batch/Microsoft.Azure.Batch/README.md"
+  start_lines: "3"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    Path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.12.0/sdk/batch/Microsoft.Azure.Batch/README.md?plain=1#L3
+- path: "eng/common/spelling/package-lock.json"
+  start_lines: "144"
+  line_count: 1755
+  detected_license: "NOASSERTION"
+  concluded_license: "NONE"
+  reason: "INCORRECT"
+  comment: |
+    Based on the investigation no license information was found,hence it is a false positive
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/eng/common/spelling/package-lock.json#L144-L1755
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/ArmComputeModelFactory.cs"
+  start_lines: "2"
+  line_count: 4087
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "CODE"
+  comment: |
+    Based on the investigation license identified as MIT, Regarding LicenseRef-scancode-proprietary-license it's false positive targeting to Veriable eula, inside the code
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/compute/Azure.ResourceManager.Compute/src/Generated/ArmComputeModelFactory.cs#L2-L3056
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/CommunityGalleryImageData.cs"
+  start_lines: "2"
+  line_count: 93
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/compute/Azure.ResourceManager.Compute/src/Generated/CommunityGalleryImageData.cs#L2-L93
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryInfo.cs"
+  start_lines: "2"
+  line_count: 76
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryInfo.cs#L2-L76
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryMetadata.cs"
+  start_lines: "2"
+  line_count: 87
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/compute/Azure.ResourceManager.Compute/src/Generated/Models/CommunityGalleryMetadata.cs#L2-L87
+- path: "sdk/compute/Azure.ResourceManager.Compute/src/Generated/SharedGalleryImageData.cs"
+  start_lines: "2"
+  line_count: 90
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/compute/Azure.ResourceManager.Compute/src/Generated/SharedGalleryImageData.cs#L2-L91
+- path: "sdk/containerregistry/Azure.Containers.ContainerRegistry/src/Generated/Models/OciAnnotations.cs"
+  start_lines: "2"
+  line_count: 46
+  detected_license: "MIT AND NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/containerregistry/Azure.Containers.ContainerRegistry/src/Generated/Models/OciAnnotations.cs#L2-L48
+- path: "**/README.md"
+  detected_license: "NOASSERTION"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation LicenseRef-scancode-ms-cla license information found
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/search/README.md?plain=1#L28-L34
+- path: "**/README.md"
+  detected_license: "NOASSERTION AND LicenseRef-scancode-google-cla"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation LicenseRef-scancode-ms-cla license information found
+    https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/search/README.md?plain=1#L28-L34
+- path: "sdk/healthdataaiservices/Azure.Health.Deidentification/src/Generated/PhiCategory.cs"
+  start_lines: "2"
+  line_count: 40
+  detected_license: "MIT AND LicenseRef-scancode-proprietary-license"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/healthdataaiservices/Azure.Health.Deidentification/src/Generated/PhiCategory.cs#L2-L40
+- path: "sdk/webpubsub/Microsoft.Azure.WebPubSub.Common/src/Shared/WebPubSubStatusCode.cs"
+  start_lines: "2"
+  line_count: 6
+  detected_license: "(AGPL-3.0-or-later OR BSD-3-Clause) AND CC-BY-SA-4.0"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/webpubsub/Microsoft.Azure.WebPubSub.Common/src/Shared/WebPubSubStatusCode.cs#L2-L7
+- path: "sdk/provisioning/Azure.Provisioning.Sql/src/Generated/Models/ManagedInstanceLicenseType.cs"
+  start_lines: "2"
+  line_count: 8
+  detected_license: "MIT OR GPL-3.0-only"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/provisioning/Azure.Provisioning.Sql/src/Generated/Models/ManagedInstanceLicenseType.cs#L2-L9
+- path: "sdk/provisioning/Generator/src/Model/Specification.Files.cs"
+  start_lines: "2"
+  line_count: 227
+  detected_license: "MIT AND NOASSERTION"
+  concluded_license: "MIT and LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT and LicenseRef-scancode-ms-cla
+    path-https://github.com/Azure/azure-sdk-for-net/blob/Azure.Identity_1.13.0/sdk/provisioning/Generator/src/Model/Specification.Files.cs#L2-L228

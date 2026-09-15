@@ -1,0 +1,47 @@
+id: "NuGet:Microsoft.AspNetCore:OData.NewtonsoftJson:8.2.0"
+source_code_origin: VCS
+path_excludes:
+- pattern: "sample/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "test/**"
+  reason: "DOCUMENTATION_OF"
+license_finding_curations:
+- path: "src/Microsoft.AspNetCore.OData.NewtonsoftJson/**"
+  start_lines: "4"
+  line_count: 1
+  detected_license: "MIT AND CC-BY-3.0"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'See License.txt in the project root' from https://github.com/OData/AspNetCoreOData/blob/main/src/Microsoft.AspNetCore.OData.NewtonsoftJson/JDynamicTypeWrapperConverter.cs#L4 
+    points to license.txt file where CC-BY-3.0 is only applicable for documentation
+- path: "src/Microsoft.AspNetCore.OData/**"
+  start_lines: "4"
+  line_count: 1
+  detected_license: "MIT AND CC-BY-3.0"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'See License.txt in the project root' from
+    https://github.com/OData/AspNetCoreOData/blob/main/src/Microsoft.AspNetCore.OData/Routing/Template/NavigationLinkSegmentTemplate.cs#L4
+    points to license.txt file where CC-BY-3.0 is only applicable for documentation
+- path: "src/Microsoft.AspNetCore.OData/**"
+  start_lines: "16"
+  line_count: 1
+  detected_license: "MIT AND CC-BY-3.0"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'See License.txt in the project root' from
+    https://github.com/OData/AspNetCoreOData/blob/8.2.0/src/Microsoft.AspNetCore.OData/Query/Container/PropertyContainer.generated.tt#L16
+    points to license.txt file where CC-BY-3.0 is only applicable for documentation
+- path: "License.txt"
+  start_lines: "6"
+  line_count: 20
+  detected_license: "MIT AND CC-BY-3.0"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'See License.txt in the project root' from
+    https://github.com/OData/AspNetCoreOData/blob/8.2.0/License.txt#L6-L25
+    points to license.txt file where CC-BY-3.0 is only applicable for documentation

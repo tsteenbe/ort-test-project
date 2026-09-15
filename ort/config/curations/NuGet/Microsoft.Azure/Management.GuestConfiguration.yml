@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.GuestConfiguration"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/guestconfiguration/Microsoft.Azure.Management.GuestConfiguration"

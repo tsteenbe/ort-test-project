@@ -1,0 +1,19 @@
+---
+id: "NuGet:Microsoft.IdentityModel:Logging:8.12.1"
+source_code_origin: "VCS"
+license_finding_curations:
+- path: "Contributing.md"
+  start_lines: "21"
+  line_count: 4
+  detected_license: "NOASSERTION"
+  concluded_license: "NONE"
+  reason: "INCORRECT"
+  comment: "Based on the investigation,no license information was found,hence it is a false positive"
+- path: "src/Microsoft.IdentityModel.Validators/AadIssuerValidator/AadIssuerValidatorConstants.cs"
+  start_lines: "2"
+  line_count: 6
+  detected_license: "(LGPL-2.1-only OR EPL-2.0) AND MIT"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match with license see- https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/8.12.1/src/Microsoft.IdentityModel.Validators/AadIssuerValidator/AadIssuerValidatorConstants.cs#L2-L7

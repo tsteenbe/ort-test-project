@@ -1,0 +1,38 @@
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.EventGrid"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.EventGrid"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-functions-dotnet-worker/blob/d62e5622b774b7d176c7e07ed3d384c771921bbd/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.5.0/license": "MIT"
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.EventGrid:[2.1.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-functions-dotnet-worker.git"
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.EventGrid:[2.1.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "extensions/Worker.Extensions.EventGrid/src"
+
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.EventGrid:3.5.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      Found revision within package version number, see
+      https://nuget.info/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.5.0
+      https://github.com/Azure/azure-functions-dotnet-worker/commit/d62e5622b774b7d176c7e07ed3d384c771921bbd.
+    vcs:
+      revision: "d62e5622b774b7d176c7e07ed3d384c771921bbd"

@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.AspNetCore:OpenApi"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.10/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.OpenApi/10.0.10/license": "MIT"

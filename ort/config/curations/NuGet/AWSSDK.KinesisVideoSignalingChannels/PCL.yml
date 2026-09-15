@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.KinesisVideoSignalingChannels:PCL:[3.3.644,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/KinesisVideoSignalingChannels"

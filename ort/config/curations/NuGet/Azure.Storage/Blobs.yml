@@ -1,0 +1,8 @@
+- id: "NuGet:Azure.Storage:Blobs"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Blobs_12.23.0/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Storage.Blobs/12.23.0/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Storage.Blobs/12.29.1/license": "MIT"

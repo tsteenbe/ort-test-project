@@ -1,0 +1,47 @@
+---
+id: "NuGet:Microsoft.Identity:Web.Certificate:[2.0.3,]"
+source_code_origin: "VCS"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*bench*/**"
+  reason: "TEST_OF"
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*sample*/**"
+  reason: "TEST_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.editorconfig"
+  reason: "OTHER"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CODE_OF_CONDUCT.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/Dockerfile"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/SECURITY.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/azure-pipelines.yml"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/build/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/changelog*"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/scripts/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/tools/**"
+  reason: "BUILD_TOOL_OF"
+license_finding_curations:
+- path: "src/Microsoft.Identity.Web.Certificate/CertificateConstants.cs"
+  start_lines: "2"
+  line_count: 6
+  detected_license: "MPL-1.1 OR GPL-2.0-only OR Apache-2.0"
+  concluded_license: "MIT"
+  reason: "INCORRECT"
+  comment: |
+     Match on 'Licensed under the MIT License' see file in
+     https://github.com/AzureAD/microsoft-identity-web/blob/4.11.0/src/Microsoft.Identity.Web.Certificate/CertificateConstants.cs#L2-L7.
+     No reference of the 'MPL-1.1 OR GPL-2.0-only OR Apache-2.0' at detected line count.

@@ -1,0 +1,9 @@
+---
+id: "NuGet:Microsoft.Azure:Amqp:(,2.7.0]"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/build/**"
+  reason: "BUILD_TOOL_OF"

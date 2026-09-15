@@ -1,0 +1,8 @@
+- id: "NuGet::Grpc"
+  curations:
+    comment: |
+      Open source package that holds only metadata and by design does not contain any source code.
+      The package contains only a Grpc.nuspec file, which serves as a 'Metapackage for gRPC C#' and
+      defines only Grpc.Core dependencies see e.g.
+      https://www.nuget.org/api/v2/package/Grpc/2.46.6.
+    is_metadata_only: true

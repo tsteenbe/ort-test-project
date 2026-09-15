@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:Runtime.SiteExtension:[2.1.7,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/AzureIntegration/extensions/Microsoft.AspNetCore.Runtime.SiteExtension"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:Pricing:[3.3.185,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Pricing"

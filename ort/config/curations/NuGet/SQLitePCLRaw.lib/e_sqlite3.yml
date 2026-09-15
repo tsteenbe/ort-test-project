@@ -1,0 +1,7 @@
+- id: "NuGet:SQLitePCLRaw.lib:e_sqlite3"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/SQLitePCLRaw.lib.e_sqlite3/2.1.4/license.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/SQLitePCLRaw.lib.e_sqlite3/2.1.4/license": "Apache-2.0"

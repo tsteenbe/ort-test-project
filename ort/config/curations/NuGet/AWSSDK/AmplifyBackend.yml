@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:AmplifyBackend:[3.5.64,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/AmplifyBackend"

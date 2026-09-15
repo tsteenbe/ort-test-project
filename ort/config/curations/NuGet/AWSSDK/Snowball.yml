@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:Snowball:[3.1.92,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Snowball"

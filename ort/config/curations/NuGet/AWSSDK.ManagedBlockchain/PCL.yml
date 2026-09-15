@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.ManagedBlockchain:PCL:[3.3.502,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ManagedBlockchain"

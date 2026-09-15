@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Bcl:TimeProvider"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v8.0.1/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/8.0.1/license": "MIT"

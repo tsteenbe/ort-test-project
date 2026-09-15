@@ -1,0 +1,24 @@
+- id: "NuGet:Microsoft.AspNetCore:SignalR.Redis:2.1.7"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.SignalR.Redis"
+- id: "NuGet:Microsoft.AspNetCore:SignalR.Redis:2.2.1"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.SignalR.Redis"
+- id: "NuGet:Microsoft.AspNetCore:SignalR.Redis:[2.1.8,2.1.31]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/server/Redis/src"
+- id: "NuGet:Microsoft.AspNetCore:SignalR.Redis:[2.2.2,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/server/Redis/src"

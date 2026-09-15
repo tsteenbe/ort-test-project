@@ -1,0 +1,49 @@
+- id: "NuGet:System.Diagnostics:EventLog"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Diagnostics:EventLog:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:System.Diagnostics:EventLog:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/System.Diagnostics.EventLog/src"
+
+- id: "NuGet:System.Diagnostics:EventLog:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Diagnostics:EventLog:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Diagnostics.EventLog/src"
+
+- id: "NuGet:System.Diagnostics:EventLog:[5.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v5.0.0/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v8.0.0/src/runtime/LICENSE.TXT#L1-L23 and
+      https://github.com/dotnet/dotnet/blob/v10.0.9/src/runtime/LICENSE.TXT#L1-L23
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Diagnostics.EventLog/5.0.0/license": "MIT"
+      "https://www.nuget.org/packages/System.Diagnostics.EventLog/8.0.0/license": "MIT"
+      "https://www.nuget.org/packages/System.Diagnostics.EventLog/10.0.0/license": "MIT"
+      "https://www.nuget.org/packages/System.Diagnostics.EventLog/10.0.9/license": "MIT"
+      "https://www.nuget.org/packages/System.Diagnostics.EventLog/10.0.10/license": "MIT"

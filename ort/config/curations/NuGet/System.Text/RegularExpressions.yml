@@ -1,0 +1,53 @@
+- id: "NuGet:System.Text:RegularExpressions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Text:RegularExpressions"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.Text:RegularExpressions"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Text.RegularExpressions/src"
+
+- id: "NuGet:System.Text:RegularExpressions:4.3.1"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.RegularExpressions/4.3.1 and
+      https://github.com/dotnet/corefx/commit/718443a10dbd456b6c8f08ee594a92cfbf2ef8db.
+    vcs:
+      revision: "718443a10dbd456b6c8f08ee594a92cfbf2ef8db"
+
+- id: "NuGet:System.Text:RegularExpressions:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.RegularExpressions/4.3.0 and
+      https://github.com/dotnet/corefx/commits/release/3.1/src/System.Text.RegularExpressions/src.
+    vcs:
+      revision: "9e8050a2bdca9aeff16bd8e704f380e86813821d"
+
+- id: "NuGet:System.Text:RegularExpressions:4.1.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.RegularExpressions/4.1.0 and
+      https://github.com/dotnet/corefx/commits/release/3.1/src/System.Text.RegularExpressions/src.
+    vcs:
+      revision: "46553ef5796647cf7f90bf128b97e13331f003cd"

@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.Communication:AlphaIds"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/communication/Azure.Communication.AlphaIds"

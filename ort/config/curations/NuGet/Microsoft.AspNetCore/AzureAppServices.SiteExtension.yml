@@ -1,0 +1,24 @@
+- id: "NuGet:Microsoft.AspNetCore:AzureAppServices.SiteExtension:2.2.0"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SiteExtensions/src/Microsoft.AspNetCore.AzureAppServices.SiteExtension"
+- id: "NuGet:Microsoft.AspNetCore:AzureAppServices.SiteExtension:2.2.1"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SiteExtensions/src/Microsoft.AspNetCore.AzureAppServices.SiteExtension"
+- id: "NuGet:Microsoft.AspNetCore:AzureAppServices.SiteExtension:[2.1.7,2.1.31]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/AzureIntegration/extensions/Microsoft.AspNetCore.AzureAppServices.SiteExtension"
+- id: "NuGet:Microsoft.AspNetCore:AzureAppServices.SiteExtension:[2.2.2,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SiteExtensions/LoggingAggregate/src/Microsoft.AspNetCore.AzureAppServices.SiteExtension"

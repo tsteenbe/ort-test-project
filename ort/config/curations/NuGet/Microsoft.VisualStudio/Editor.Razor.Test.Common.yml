@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.VisualStudio:Editor.Razor.Test.Common:[2.1.7,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Razor/test/Microsoft.VisualStudio.Editor.Razor.Test.Common"

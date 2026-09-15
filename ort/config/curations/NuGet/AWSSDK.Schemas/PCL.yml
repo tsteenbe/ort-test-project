@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.Schemas:PCL:[3.3.640,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Schemas"

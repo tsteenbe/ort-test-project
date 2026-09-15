@@ -1,0 +1,8 @@
+---
+id: "NuGet:System.IdentityModel:Tokens.Jwt:[8.2.1,8.9.0]"
+source_code_origin: "VCS"
+path_excludes:
+- pattern: "Contributing.md"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+   "Contributing.md is excluded from assessment here because the file is not applicable in the present case as the package is not considered in contribution context"

@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.IdentityModel:LoggingExtensions"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/blob/25d90ed3/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.IdentityModel.LoggingExtensions/8.19.2/license": "MIT"

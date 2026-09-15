@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.DotNet:Web.Spa.ProjectTemplates:[2.1.7,2.2.13]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Templating/src/Microsoft.DotNet.Web.Spa.ProjectTemplates"
+- id: "NuGet:Microsoft.DotNet:Web.Spa.ProjectTemplates:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/ProjectTemplates/Web.Spa.ProjectTemplates"

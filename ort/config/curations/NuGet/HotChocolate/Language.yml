@@ -1,0 +1,7 @@
+- id: "NuGet:HotChocolate:Language"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/ChilliCream/graphql-platform/blob/15.1.17/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/HotChocolate.Language/15.1.17/license": "MIT"

@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:DataLakeStore"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/datalake-store/Azure.ResourceManager.DataLakeStore"

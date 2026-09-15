@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.DigitalTwins"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/digitaltwins/Microsoft.Azure.Management.DigitalTwins"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:BackupStorage:[3.7.333,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/BackupStorage"

@@ -1,0 +1,24 @@
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:2.1.7"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.Http.Connections.Client"
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:2.2.1"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/src/Microsoft.AspNetCore.Http.Connections.Client"
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:[2.1.8,2.1.31]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/clients/csharp/Http.Connections.Client/src"
+- id: "NuGet:Microsoft.AspNetCore:Http.Connections.Client:[2.2.2,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/clients/csharp/Http.Connections.Client/src"

@@ -1,0 +1,28 @@
+- id: "NuGet:Polly.Caching:Memory"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Polly.Caching:Memory"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/App-vNext/Polly.Caching.MemoryCache/blob/cbd624730cdace3fb498604fcd4debec57dac67e/LICENSE.txt and
+      https://github.com/App-vNext/Polly.Caching.MemoryCache/blob/1.0.22/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Polly.Caching.Memory/3.0.2/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly.Caching.Memory/3.0.1/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly.Caching.Memory/3.0.0/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly.Caching.Memory/2.0.2/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly.Caching.Memory/2.0.1/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly.Caching.Memory/2.0.0/license": "BSD-3-Clause"
+
+- id: "NuGet:Polly.Caching:Memory:3.0.2"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      Found revision by browsing release date history, see
+      https://github.com/App-vNext/Polly.Caching.MemoryCache/commit/cbd624730cdace3fb498604fcd4debec57dac67e.
+    vcs:
+      revision: "cbd624730cdace3fb498604fcd4debec57dac67e"

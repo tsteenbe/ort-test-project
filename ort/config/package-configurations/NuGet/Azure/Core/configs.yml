@@ -1,0 +1,8 @@
+---
+id: "NuGet:Azure:Core:[1.0.0,)"
+source_code_origin: VCS
+path_excludes:
+- pattern: "sdk/core/Azure.Core/tests/**"
+  reason: "TEST_OF"
+  comment: |
+      Excluded because this directory contains test code only and is not part of the distributed product.

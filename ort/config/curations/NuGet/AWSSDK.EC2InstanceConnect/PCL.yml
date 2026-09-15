@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.EC2InstanceConnect:PCL:[3.3.541,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/EC2InstanceConnect"

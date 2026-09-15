@@ -1,0 +1,7 @@
+- id: "NuGet:Swashbuckle.AspNetCore:Filters:[10.0.1,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/mattfrear/Swashbuckle.AspNetCore.Filters/blob/v10.0.1/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Swashbuckle.AspNetCore.Filters/10.0.1/license": "MIT"

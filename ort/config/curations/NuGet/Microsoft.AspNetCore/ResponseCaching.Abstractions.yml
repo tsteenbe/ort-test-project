@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:ResponseCaching.Abstractions:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/ResponseCaching/src/Microsoft.AspNetCore.ResponseCaching.Abstractions"
+- id: "NuGet:Microsoft.AspNetCore:ResponseCaching.Abstractions:(,3.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.ResponseCaching.Abstractions"

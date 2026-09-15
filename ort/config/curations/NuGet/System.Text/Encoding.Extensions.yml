@@ -1,0 +1,53 @@
+- id: "NuGet:System.Text:Encoding.Extensions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Text:Encoding.Extensions:[4.0.0,4.3.0]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Text:Encoding.Extensions:[4.0.0,4.3.0]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Text.Encoding.Extensions"
+
+- id: "NuGet:System.Text:Encoding.Extensions:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Encoding.Extensions and
+      https://github.com/dotnet/runtime/commits/main/src/libraries/System.Text.Encoding.Extensions/src.
+    vcs:
+      revision: "482458afd01b29f87369e60330892f3f2f2bdd1a"
+
+- id: "NuGet:System.Text:Encoding.Extensions:4.0.11"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Encoding.Extensions and
+      https://github.com/dotnet/runtime/commits/main/src/libraries/System.Text.Encoding.Extensions/src.
+    vcs:
+      revision: "9a175730c5e1c7965815cf4a83b84cb638fda755"
+
+- id: "NuGet:System.Text:Encoding.Extensions:4.0.10"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Encoding.Extensions and
+      https://github.com/dotnet/runtime/commits/main/src/libraries/System.Text.Encoding.Extensions/src.
+    vcs:
+      revision: "b8670dea2ffdcb2663732ad64d52a14e2a0c7de1"

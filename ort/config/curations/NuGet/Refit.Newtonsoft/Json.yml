@@ -1,0 +1,36 @@
+- id: "NuGet:Refit.Newtonsoft:Json"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Refit.Newtonsoft:Json"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/reactiveui/refit.git"
+
+- id: "NuGet:Refit.Newtonsoft:Json"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/reactiveui/refit/blob/v10.2.0/LICENSE#L1-L23
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Refit.Newtonsoft.Json/7.2.22/license": "MIT"
+      "https://www.nuget.org/packages/Refit.Newtonsoft.Json/10.2.0/license": "MIT"
+
+- id: "NuGet:Refit.Newtonsoft:Json:[10.2.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Refit.Newtonsoft.Json"
+
+- id: "NuGet:Refit.Newtonsoft:Json:[6.0.1,10.0.1["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "Refit.Newtonsoft.Json"

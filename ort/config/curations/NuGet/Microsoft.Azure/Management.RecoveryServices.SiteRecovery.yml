@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.RecoveryServices.SiteRecovery"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/recoveryservices-siterecovery/Microsoft.Azure.Management.RecoveryServices.SiteRecovery"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.Amplify:CoreCLR:[3.3.414,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/Amplify"

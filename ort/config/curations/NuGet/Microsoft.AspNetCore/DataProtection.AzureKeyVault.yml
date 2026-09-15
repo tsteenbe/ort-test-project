@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:DataProtection.AzureKeyVault:2.1.6"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/DataProtection/src/Microsoft.AspNetCore.DataProtection.AzureKeyVault"
+- id: "NuGet:Microsoft.AspNetCore:DataProtection.AzureKeyVault:[2.1.7,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/DataProtection/AzureKeyVault/src"

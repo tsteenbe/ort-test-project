@@ -1,0 +1,50 @@
+/*
+ * Copyright (c) 2026 The Example.org Copyright Holders.
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ */
+
+:root {
+  --color-text: #1b1b1f;
+  --color-muted: #63636b;
+  --color-accent: #1a6fd4;
+  --measure: 42rem;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.site-header,
+.site-footer,
+.page {
+  margin: 0 auto;
+  max-width: var(--measure);
+  padding: 1.5rem 1rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.site-title {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header nav a {
+  margin-right: 1rem;
+  color: var(--color-accent);
+}
+
+.site-footer {
+  border-top: 1px solid #e3e3e8;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}

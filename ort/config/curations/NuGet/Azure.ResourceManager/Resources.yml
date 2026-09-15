@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:Resources"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/resources/Azure.ResourceManager.Resources"

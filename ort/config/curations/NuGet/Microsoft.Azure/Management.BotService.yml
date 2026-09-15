@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.BotService"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/botservice/Microsoft.Azure.Management.BotService"

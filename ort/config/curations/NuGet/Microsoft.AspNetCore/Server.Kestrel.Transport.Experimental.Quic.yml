@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:Server.Kestrel.Transport.Experimental.Quic:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Servers/Kestrel/Transport.Quic/src"

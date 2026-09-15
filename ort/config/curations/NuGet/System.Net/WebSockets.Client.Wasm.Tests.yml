@@ -1,0 +1,6 @@
+- id: "NuGet:System.Net:WebSockets.Client.Wasm.Tests:[6.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Net.WebSockets.Client/tests/wasm"

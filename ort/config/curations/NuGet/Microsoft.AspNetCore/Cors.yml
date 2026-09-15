@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:Cors:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/CORS/src/Microsoft.AspNetCore.Cors"
+- id: "NuGet:Microsoft.AspNetCore:Cors:(,3.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Cors"

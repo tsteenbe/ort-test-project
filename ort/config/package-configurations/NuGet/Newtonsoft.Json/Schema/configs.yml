@@ -1,0 +1,14 @@
+---
+id: "NuGet:Newtonsoft.Json:Schema:[1.0.1,)"
+source_code_origin: "VCS"
+license_finding_curations:
+- path: "Src/Newtonsoft.Json.Schema/Infrastructure/Licensing/LicenseHelpers.cs"
+  start_lines: "178"
+  line_count: 1
+  detected_license: "LicenseRef-scancode-proprietary-license"
+  concluded_license: "NONE"
+  reason: "CODE"
+  comment: |
+    Invalid match: Match on 'string message = "License is not valid for this version of Json.NET Schema.' at line NO #178 in specified path.
+    https://github.com/JamesNK/Newtonsoft.Json.Schema/blob/4.0.1/Src/Newtonsoft.Json.Schema/Infrastructure/Licensing/LicenseHelpers.cs#L178.
+    No reference of LicenseRef-scancode-proprietary-license in detected path and line number in file path.

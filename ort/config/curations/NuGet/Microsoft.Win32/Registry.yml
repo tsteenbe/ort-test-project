@@ -1,0 +1,71 @@
+- id: "NuGet:Microsoft.Win32:Registry"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v5.0.0/src/libraries/Microsoft.Win32.Registry/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Win32.Registry/5.0.0/license": "MIT"
+
+- id: "NuGet:Microsoft.Win32:Registry:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/Microsoft.Win32.Registry"
+- id: "NuGet:Microsoft.Win32:Registry:4.5.0"
+  curations:
+    comment: |
+      Set the VCS information to point to the exact commit used to build this package version.
+
+      Long explanation // Investigation:
+      - Microsoft.Win32.Registry 4.5.0 is a legacy .NET Core package originating
+        from the CoreFX era (pre-.NET 5).
+
+      - There is a CoreFX repository that historically contained the source code:
+        https://github.com/dotnet/corefx
+        but it does not provide a tag/release for this specific package version.
+        Latest tag/release in this repository is 3.1.32,
+        where source code existed under following path:
+        https://github.com/dotnet/corefx/tree/v3.1.32/src/Microsoft.Win32.Registry
+        but complete repository was archived, it states:
+        "This repository was archived by the owner on Jan 23, 2023. It is now read-only."
+
+      - There is a document:
+        https://github.com/dotnet/corefx/blob/master/Documentation/building/versioning.md
+        where we can understand that the CoreFX build/versioning system
+        used MSBuild properties to compute NuGet package versions during the build,
+        and they were not derived from Git tags.
+        As a result, the repository cannot guarantee the existence
+        of a Git tag corresponding to every published package version.
+
+      - There is also notice in About section of the repository https://github.com/dotnet/corefx:
+        "This repo is used for servicing PR's for .NET Core 2.1 and 3.1.
+        Please visit us at https://github.com/dotnet/runtime"
+
+      - Active development later moved to https://github.com/dotnet/runtime,
+        which starts at version 5.0.0 and does not contain historical 4.x
+        release mappings.
+
+      - However, the NuGet package: 'microsoft.win32.registry.4.5.0.nupkg',
+        downloaded from:
+        https://www.nuget.org/api/v2/package/Microsoft.Win32.Registry/4.5.0,
+        and extracted, contains a file 'version.txt' with the value:
+          '30ab651fcb4354552bd4891619a0bdd81e0ebdbf'
+
+          < ivica-stanisic@PF468LTW OSPO-6869: > $ cat microsoft.win32.registry.4.5.0-extracted/version.txt
+          30ab651fcb4354552bd4891619a0bdd81e0ebdbf
+
+      - This value is a Git commit SHA identifying the exact source revision
+        used to build the package.
+
+      - The Microsoft.Win32.Registry sources for this package version are
+        located under the path: 'src/Microsoft.Win32.Registry' in the
+        https://github.com/dotnet/corefx repository at the specified revision.
+
+      - Therefore, this specific commit in the CoreFX repository is set
+        to resolve the provenance for this package version.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+      revision: "30ab651fcb4354552bd4891619a0bdd81e0ebdbf"
+      path: "src/Microsoft.Win32.Registry"

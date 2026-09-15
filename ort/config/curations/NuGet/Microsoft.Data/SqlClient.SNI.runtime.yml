@@ -1,0 +1,29 @@
+- id: "NuGet:Microsoft.Data:SqlClient.SNI.runtime"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Data:SqlClient.SNI.runtime"
+  curations:
+    comment: |
+      Package source location is not consistently declared across versions.
+      Using VCS mapping for source inspection.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/SqlClient.git"
+
+- id: "NuGet:Microsoft.Data:SqlClient.SNI.runtime"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.Data.SqlClient/netcore/src/Microsoft/Data/SqlClient/SNI"
+
+- id: "NuGet:Microsoft.Data:SqlClient.SNI.runtime"
+  curations:
+    comment: |
+      Map declared license based on repository LICENSE file
+      https://github.com/dotnet/SqlClient/blob/V5.2.0/LICENSE#L1-L21
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Data.SqlClient.SNI.runtime/5.2.0/license": "MIT"

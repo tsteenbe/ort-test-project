@@ -1,0 +1,47 @@
+- id: "NuGet:Microsoft.EntityFrameworkCore:Abstractions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.EntityFrameworkCore:Abstractions:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Abstractions/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.EntityFrameworkCore:Abstractions:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/efcore/src/EFCore.Abstractions"
+
+- id: "NuGet:Microsoft.EntityFrameworkCore:Abstractions:[2.1.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Abstractions/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/efcore.git"
+
+- id: "NuGet:Microsoft.EntityFrameworkCore:Abstractions:[2.1.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/EFCore.Abstractions"
+
+- id: "NuGet:Microsoft.EntityFrameworkCore:Abstractions"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/efcore/blob/v7.0.20/LICENSE.txt#L1-L23,
+      https://github.com/dotnet/efcore/blob/v8.0.23/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Abstractions/7.0.20/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Abstractions/8.0.23/license": "MIT"

@@ -1,0 +1,32 @@
+- id: "NuGet:OpenTelemetry.Instrumentation:Runtime"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:OpenTelemetry.Instrumentation:Runtime"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Runtime/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/open-telemetry/opentelemetry-dotnet-contrib.git"
+
+- id: "NuGet:OpenTelemetry.Instrumentation:Runtime"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/OpenTelemetry.Instrumentation.Runtime"
+
+- id: "NuGet:OpenTelemetry.Instrumentation:Runtime"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/f8e1ea203339d1d03f80f7681beacb403790f4b3/LICENSE.TXT,
+      https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.Runtime-1.15.1/LICENSE.TXT#L1-L201.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Runtime/1.12.0/license": "Apache-2.0"
+      "https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Runtime/1.15.1/license": "Apache-2.0"
+      "https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Runtime/1.16.0/license": "Apache-2.0"

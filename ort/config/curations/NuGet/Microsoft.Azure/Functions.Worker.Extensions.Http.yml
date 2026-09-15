@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Azure:Functions.Worker.Extensions.Http:3.3.0"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-functions-dotnet-worker/blob/97a0783dd6c610145142f6d29f2c16755f8f5856/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0/license": "MIT"

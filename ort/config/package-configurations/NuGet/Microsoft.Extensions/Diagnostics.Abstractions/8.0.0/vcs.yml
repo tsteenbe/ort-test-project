@@ -1,0 +1,9 @@
+---
+id: "NuGet:Microsoft.Extensions:Diagnostics.Abstractions:8.0.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/dotnet/runtime.git"
+  revision: "5535e31a712343a63f5d7d796cd874e563e5ac14"
+path_excludes:
+  - pattern: "src/native/external/brotli/common/dictionary.bin"
+    reason: "OTHER"

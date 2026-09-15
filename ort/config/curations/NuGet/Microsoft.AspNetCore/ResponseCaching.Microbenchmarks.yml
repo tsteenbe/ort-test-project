@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:ResponseCaching.Microbenchmarks:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Middleware/perf/ResponseCaching.Microbenchmarks"

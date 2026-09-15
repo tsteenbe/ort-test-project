@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.MachineLearning"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/machinelearning/Microsoft.Azure.Management.MachineLearning"

@@ -1,0 +1,46 @@
+- id: "NuGet:Microsoft.Extensions:Logging.Abstractions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Extensions:Logging.Abstractions:[10.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v10.0.0/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/10.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/10.0.2/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/10.0.3/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/10.0.10/license": "MIT"
+
+- id: "NuGet:Microsoft.Extensions:Logging.Abstractions:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.Extensions:Logging.Abstractions:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/Microsoft.Extensions.Logging.Abstractions/src"
+
+- id: "NuGet:Microsoft.Extensions:Logging.Abstractions:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:Microsoft.Extensions:Logging.Abstractions:[5.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/Microsoft.Extensions.Logging.Abstractions/src"

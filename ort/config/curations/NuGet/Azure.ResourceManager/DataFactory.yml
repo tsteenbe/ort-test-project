@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:DataFactory"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/datafactory/Azure.ResourceManager.DataFactory"

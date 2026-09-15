@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:Server.Kestrel.Transport.Sockets:[2.1.7,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Servers/Kestrel/Transport.Sockets/src"

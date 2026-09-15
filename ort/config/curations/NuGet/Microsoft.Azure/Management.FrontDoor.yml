@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.FrontDoor"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/frontdoor/Microsoft.Azure.Management.FrontDoor"

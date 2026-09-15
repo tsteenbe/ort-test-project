@@ -1,0 +1,38 @@
+- id: "NuGet:OpenTelemetry.Instrumentation:SqlClient"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:OpenTelemetry.Instrumentation:SqlClient"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/Instrumentation.SqlClient-1.16.0/LICENSE.TXT#L1-L201.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/OpenTelemetry.Instrumentation.SqlClient/1.16.0/license": "Apache-2.0"
+
+- id: "NuGet:OpenTelemetry.Instrumentation:SqlClient"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/OpenTelemetry.Instrumentation.SqlClient"
+
+- id: "NuGet:OpenTelemetry.Instrumentation:SqlClient:[1.9.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/OpenTelemetry.Instrumentation.sqlclient.
+    vcs:
+      type: "Git"
+      url: "https://github.com/open-telemetry/opentelemetry-dotnet-contrib.git"
+
+- id: "NuGet:OpenTelemetry.Instrumentation:SqlClient:[0.3.0,1.9.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/OpenTelemetry.Instrumentation.sqlclient.
+    vcs:
+      type: "Git"
+      url: "https://github.com/open-telemetry/opentelemetry-dotnet.git"

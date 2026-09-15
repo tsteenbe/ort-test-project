@@ -1,0 +1,7 @@
+- id: "NuGet::mongocsharpdriver"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      VCS URL found on https://docs.mongodb.com/drivers/csharp/.
+    vcs:
+      url: "https://github.com/mongodb/mongo-csharp-driver.git"

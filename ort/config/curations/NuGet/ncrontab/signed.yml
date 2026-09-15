@@ -1,0 +1,20 @@
+- id: "NuGet:ncrontab:signed:3.3.0"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "v3.3"
+
+- id: "NuGet:ncrontab:signed:3.2.0"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "v3.2"
+
+- id: "NuGet:ncrontab:signed:3.1.0"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "v3.1"

@@ -1,0 +1,31 @@
+- id: "NuGet::Polly"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet::Polly"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/App-vNext/Polly.git"
+
+- id: "NuGet::Polly"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Polly"
+
+- id: "NuGet::Polly:[7.2.4,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/App-vNext/Polly/blob/8.7.0/LICENSE#L1-L28
+      https://github.com/App-vNext/Polly/blob/7.2.4/LICENSE.txt#L1-L26
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Polly/8.5.2/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly/7.2.4/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Polly/8.7.0/license": "BSD-3-Clause"

@@ -1,0 +1,13 @@
+---
+id: "NuGet:Microsoft.Azure:Cosmos:3.47.2"
+source_code_origin: VCS
+license_finding_curations:
+- path: "README.md"
+  start_lines: "67"
+  line_count: 11
+  detected_license: "NOASSERTION"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: | 
+    Match on contributor license agreement text, see link
+    https://github.com/Azure/azure-cosmos-dotnet-v3/blob/3.47.2/README.md?plain=1#L67-L77

@@ -1,0 +1,18 @@
+---
+id: "NuGet:Microsoft:EntityFrameworkCore:8.0.10"
+vcs:
+  type: "Git"
+  url: "https://github.com/dotnet/efcore.git"
+  revision: "4315fa43c9573671f8f5be21497d59f9c99cd829"
+path_excludes:
+- pattern: "test/**"
+  reason: "TEST_OF"
+  comment: "Exclude the test folder, as it contains test files"
+license_finding_curations:
+- path: ".github/CONTRIBUTING.md"
+  start_lines: "55"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "NONE"
+  reason: "INCORRECT"
+  comment: "Based on the investigation,no license information was found,hence it is a false positive"

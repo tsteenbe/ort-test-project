@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft:JSInterop:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/JSInterop/Microsoft.JSInterop/src"

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example.testproject</groupId>
+    <artifactId>lib-java</artifactId>
+    <version>0.3.1</version>
+    <packaging>jar</packaging>
+
+    <name>Example Text Kit</name>
+    <description>A small text utility library used to create ORT analyzer results for testing.</description>
+    <url>https://github.com/tsteenbe/ort-test-project/tree/main/test-project/lib-java</url>
+
+    <organization>
+        <name>Example.org</name>
+        <url>https://example.org</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>BSD 2-Clause "Simplified" License</name>
+            <url>https://opensource.org/licenses/BSD-2-Clause</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Dev A</name>
+            <email>dev.a@example.org</email>
+            <organization>Example.org</organization>
+        </developer>
+        <developer>
+            <name>Dev B</name>
+            <email>dev.b@example.org</email>
+            <organization>Example.org</organization>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/tsteenbe/ort-test-project.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/tsteenbe/ort-test-project.git</developerConnection>
+        <url>https://github.com/tsteenbe/ort-test-project</url>
+        <tag>v0.3.1</tag>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+
+        <commons-text.version>1.12.0</commons-text.version>
+        <slf4j.version>2.0.13</slf4j.version>
+        <junit.version>4.13.2</junit.version>
+    </properties>
+
+    <dependencies>
+        <!-- Pulls in exactly one transitive dependency: org.apache.commons:commons-lang3. -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>${commons-text.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Has no transitive dependencies at all. -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Test scope only, pulls in exactly one transitive dependency: org.hamcrest:hamcrest-core. -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

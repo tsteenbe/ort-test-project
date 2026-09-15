@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:DevSpaces"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/devspaces/Azure.ResourceManager.DevSpaces"

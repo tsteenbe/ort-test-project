@@ -1,0 +1,39 @@
+- id: "NuGet:Microsoft.AspNetCore:Cryptography.Internal:[2.0.0,2.1.1]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.AspNetCore.Cryptography.Internal
+    vcs:
+      type: "Git"
+      url: "https://github.com/aspnet/DataProtection.git"
+      path: "src/Microsoft.AspNetCore.Cryptography.Internal"
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.AspNetCore:Cryptography.Internal"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.7/src/aspnetcore/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.Cryptography.Internal/10.0.7/license": "MIT"
+
+- id: "NuGet:Microsoft.AspNetCore:Cryptography.Internal:[2.2.0,9.0.15]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.AspNetCore.Cryptography.Internal
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnetcore.git"
+      path: "src/DataProtection/Cryptography.Internal/src"
+    source_code_origins: [VCS]
+- id: "NuGet:Microsoft.AspNetCore:Cryptography.Internal:[10.0.0,10.0.7]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.AspNetCore.Cryptography.Internal
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+      path: "src/aspnetcore/src/DataProtection/Cryptography.Internal/src"
+    source_code_origins: [VCS]

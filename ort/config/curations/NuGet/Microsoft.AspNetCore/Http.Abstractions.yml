@@ -1,0 +1,68 @@
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because there are issues using the source artifact via internal package registries (e.g., Artifactory).
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:[2.3.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnetcore.git"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:[2.3.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Http/Http.Abstractions/src"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:[2.0.0,2.3.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/aspnet/HttpAbstractions.git"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:[2.0.0,2.3.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http.Abstractions"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:2.3.9"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/Microsoft.AspNetCore.Http.Abstractions/2.3.9 and
+      https://github.com/dotnet/aspnetcore/tree/dbf71c0b22dc0ad6d7f6570c531e5c70d676c1b7.
+    vcs:
+      revision: "dbf71c0b22dc0ad6d7f6570c531e5c70d676c1b7"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:2.3.8"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/Microsoft.AspNetCore.Http.Abstractions/2.3.8 and
+      https://github.com/dotnet/aspnetcore/tree/afaf0bba8a9fc86e8aa551e8dd498c96461f09c5.
+    vcs:
+      revision: "afaf0bba8a9fc86e8aa551e8dd498c96461f09c5"
+
+- id: "NuGet:Microsoft.AspNetCore:Http.Abstractions:2.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/Microsoft.AspNetCore.Http.Abstractions/2.3.0 and
+      https://github.com/dotnet/aspnetcore/tree/ad30aa9595095b855c8787236996876f9f757191.
+    vcs:
+      revision: "ad30aa9595095b855c8787236996876f9f757191"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:ConnectParticipant:[3.3.636,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ConnectParticipant"

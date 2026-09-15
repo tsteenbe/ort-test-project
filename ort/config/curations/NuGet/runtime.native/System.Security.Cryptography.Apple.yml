@@ -1,0 +1,42 @@
+- id: "NuGet:runtime.native:System.Security.Cryptography.Apple"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:runtime.native:System.Security.Cryptography.Apple"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:runtime.native:System.Security.Cryptography.Apple"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Native/Unix/System.Security.Cryptography.Native.Apple"
+
+- id: "NuGet:runtime.native:System.Security.Cryptography.Apple:4.3.1"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/runtime.native.System.Security.Cryptography.Apple/4.3.1 and
+      https://github.com/dotnet/corefx/commit/de59a4244556433aee39faba347402a30801f03c.
+    vcs:
+      revision: "de59a4244556433aee39faba347402a30801f03c"
+
+- id: "NuGet:runtime.native:System.Security.Cryptography.Apple:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/runtime.native.System.Security.Cryptography.Apple/4.3.0 and
+      https://github.com/dotnet/corefx/commit/8808e3e7f9749a168f86180496d6ea0f8e159db2.
+    vcs:
+      revision: "8808e3e7f9749a168f86180496d6ea0f8e159db2"

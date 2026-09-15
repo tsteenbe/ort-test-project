@@ -1,0 +1,32 @@
+- id: "NuGet:Microsoft.SqlServer:Server"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.SqlServer:Server:[1.0.0,)"
+  curations:
+    comment: |
+      Provenance for this package is resolved via the MSS_v1.0.0 tag (Microsoft SQL Server “classic” module).
+      The actual source for Microsoft.SqlServer.Server is located under:
+      https://github.com/dotnet/SqlClient/tree/MSS_v1.0.0/src/Microsoft.SqlServer.Server
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/SqlClient.git"
+      revision: "MSS_v1.0.0"
+
+- id: "NuGet:Microsoft.SqlServer:Server:[1.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.SqlServer.Server"
+
+- id: "NuGet:Microsoft.SqlServer:Server:[1.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/SqlClient/blob/MSS_v1.0.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.SqlServer.Server/1.0.0/license": "MIT"

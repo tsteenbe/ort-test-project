@@ -1,0 +1,19 @@
+- id: "PyPI::click:"
+  curations:
+    comment: |
+      FIXME - included for testing purposes only.
+    purl: "pkg:pypi/click?key=value&key2=value2#subpath"
+
+- id: "PyPI::click:(,9.0.0["
+  curations:
+    comment: |
+      The library is licensed under BSD-3-Clause, see:
+      https://github.com/pallets/click/blob/main/LICENSE.rst
+    declared_license_mapping:
+      "BSD License": "BSD-3-Clause"
+
+- id: "PyPI::click:8.3.3"
+  curations:
+    comment: |
+      FIXME - included for testing purposes only.
+    concluded_license: "BSD-3-Clause AND LicenseRef-scancode-public-domain"

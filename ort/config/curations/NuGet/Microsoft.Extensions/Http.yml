@@ -1,0 +1,102 @@
+- id: "NuGet:Microsoft.Extensions:Http"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Extensions:Http:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.Extensions:Http:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/Microsoft.Extensions.Http/src"
+
+- id: "NuGet:Microsoft.Extensions:Http:[6.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v6.0.0/LICENSE.TXT
+      https://github.com/dotnet/dotnet/blob/v10.0.0/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v10.0.8/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v8.0.0/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v8.0.1/LICENSE.TXT and
+      https://github.com/dotnet/dotnet/blob/v9.0.3/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Http/6.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Http/8.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Http/8.0.1/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging/9.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Http/9.0.3/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging/9.0.12/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging/10.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Logging/10.0.2/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Http/10.0.8/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Http/10.0.10/license": "MIT"
+
+- id: "NuGet:Microsoft.Extensions:Http:[8.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:Microsoft.Extensions:Http:[8.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/Microsoft.Extensions.Http/src"
+
+- id: "NuGet:Microsoft.Extensions:Http:[6.0.0,8.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnetcore.git"
+
+- id: "NuGet:Microsoft.Extensions:Http:[6.0.0,8.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/HttpClientFactory"
+
+- id: "NuGet:Microsoft.Extensions:Http:[3.0.0,6.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/extensions.git"
+
+- id: "NuGet:Microsoft.Extensions:Http:[3.0.0,6.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/HttpClientFactory/Http"
+
+- id: "NuGet:Microsoft.Extensions:Http:(,3.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/aspnet/HttpClientFactory.git"
+
+- id: "NuGet:Microsoft.Extensions:Http:(,3.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.Extensions.Http"

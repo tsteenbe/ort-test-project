@@ -1,0 +1,41 @@
+---
+id: "Conan::eigen:(,5.0.1]"
+path_excludes:
+- pattern: "**/doc/**"
+  reason: "DOCUMENTATION_OF"
+license_finding_curations:
+- path: "eigen-3.4.0/Eigen/src/Core/arch/Default/Half.h"
+  start_lines: "4"
+  line_count: 22
+  detected_license: "MPL-2.0 AND NOASSERTION"
+  concluded_license: "MPL-2.0 AND BSD-2-Clause"
+  reason: "NOT_DETECTED"
+  comment: "Scanner did not detect license correctly, see https://gitlab.com/libeigen/eigen/-/blob/3.4.0/Eigen/src/Core/arch/Default/Half.h?ref_type=tags#L4-25"
+- path: "**/Eigen/src/LU/arch/InverseSize4.h"
+  start_lines: "8"
+  line_count: 25
+  detected_license: "MPL-2.0 AND NOASSERTION"
+  concluded_license: "MPL-2.0 AND LicenseRef-CARIAD-Intel"
+  reason: "NOT_DETECTED"
+  comment: "File combines MPL-2.0 code with embedded Intel SSE code, and both license headers explicitly appear in the source, see https://gitlab.com/libeigen/eigen/-/blob/3.4.0/Eigen/src/LU/arch/InverseSize4.h?ref_type=tags#L8-32"
+- path: "**/Eigen/src/OrderingMethods/Eigen_Colamd.h"
+  start_lines: "6"
+  line_count: 32
+  detected_license: "MPL-2.0 AND NOASSERTION"
+  concluded_license: "MPL-2.0 AND LicenseRef-CARIAD-COLAMD"
+  reason: "NOT_DETECTED"
+  comment: "The header contains MPL-2.0 plus the original COLAMD license text from the University of Florida, see https://gitlab.com/libeigen/eigen/-/blob/3.4.0/Eigen/src/OrderingMethods/Eigen_Colamd.h?ref_type=tags#L6-38"
+- path: "**/Eigen/src/SuperLUSupport/SuperLUSupport.h"
+  start_lines: "6"
+  line_count: 698
+  detected_license: "MPL-2.0 AND NOASSERTION"
+  concluded_license: "MPL-2.0"
+  reason: "INCORRECT"
+  comment: "Eigen only redeclares API function signatures, which are not copyright protected expression, see https://gitlab.com/libeigen/eigen/-/blob/3.4.0/Eigen/src/SuperLUSupport/SuperLUSupport.h?ref_type=tags#L6-703"
+- path: "**/unsupported/Eigen/src/IterativeSolvers/IterationController.h"
+  start_lines: "17"
+  line_count: 36
+  detected_license: "NOASSERTION AND LGPL-2.1-only"
+  concluded_license: "LicenseRef-CARIAD-ITL AND LGPL-2.1-only"
+  reason: "NOT_DETECTED"
+  comment: "The header includes both LGPL-2.1 and the custom ITL license directly in the file, see https://gitlab.com/libeigen/eigen/-/blob/3.4.0/unsupported/Eigen/src/IterativeSolvers/IterationController.h?ref_type=tags#L15-52"

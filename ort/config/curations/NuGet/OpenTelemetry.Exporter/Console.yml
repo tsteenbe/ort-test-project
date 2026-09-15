@@ -1,0 +1,7 @@
+- id: "NuGet:OpenTelemetry.Exporter:Console:1.12.0"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/open-telemetry/opentelemetry-dotnet/blob/a67acd87d5e4d437c5398664f75faa19494beb9c/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/1.12.0/license": "Apache-2.0"

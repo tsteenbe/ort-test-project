@@ -1,0 +1,100 @@
+---
+id: "NuGet:Microsoft.Net:Http.Headers:[8.0.10,11.0.100]"
+source_code_origin: VCS
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*.nuspec"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*Test*/**"
+  reason: "TEST_OF"
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*sample*/**"
+  reason: "TEST_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.editorconfig"
+  reason: "OTHER"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/.nuget/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/Build/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CMakeLists.txt"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/build*.sh"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/build/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/changelog*"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/package-lock.json"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/perf/**"
+  reason: "TEST_OF"
+- pattern: "**/scripts/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/tools/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Excluded because CONTRIBUTING.md contains contribution guidelines only and no licensing or distributable code.
+- pattern: "src/Installers/Debian/tools/**"
+  reason: "BUILD_TOOL_OF"
+  comment: |
+    Exclude the tools folder, as it is not part of the distributed product.
+license_finding_curations:
+- path: "src/Mvc/Settings.StyleCop"
+  start_lines: "322"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+      Match on https://github.com/dotnet/aspnetcore/blob/v8.0.10/src/Mvc/Settings.StyleCop#L322, the referenced link points to:
+      https://github.com/dotnet/aspnetcore/blob/v8.0.10/LICENSE.txt#L1C1-L23C10.
+      NOASSERTION is detected because of below content.
+      "See License.txt"
+- path: "src/Installers/Windows/SharedFrameworkBundle/**"
+  start_lines: "5,54,55"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+     Match on https://github.com/dotnet/aspnetcore/blob/v8.0.10/src/Installers/Windows/SharedFrameworkBundle/1028/thm.wxl#L54, the referenced link points to:
+     https://github.com/dotnet/core/blob/main/license-information.md?plain=1#L9.
+     NOASSERTION is not applicable because the license is clearly identifiable as MIT.
+- path: "src/Installers/Windows/WindowsHostingBundle/**"
+  start_lines: "7,57,58"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "REFERENCE"
+  comment: |
+      Match on https://github.com/dotnet/aspnetcore/blob/v8.0.10/src/Installers/Windows/WindowsHostingBundle/1046/thm.wxl#L57, 
+      the referenced link points to: https://github.com/dotnet/core/blob/main/license-information.md?plain=1#L9.
+      NOASSERTION is not applicable because the license is clearly identifiable as MIT.
+- path: "src/Components/THIRD-PARTY-NOTICES.txt"
+  start_lines: "1"
+  line_count: 602
+  detected_license: "MIT AND BSD-2-Clause AND Apache-2.0 AND BSD-3-Clause AND NOASSERTION AND bzip2-1.0.6"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+       Match on https://github.com/dotnet/aspnetcore/blob/v8.0.10/src/Components/THIRD-PARTY-NOTICES.txt#L31C1-L32C70.
+       Additional licenses were detected for third-party components are not part of the build package.
+- path: "THIRD-PARTY-NOTICES.txt"
+  start_lines: "1"
+  line_count: 1110
+  detected_license: "MIT AND BSD-2-Clause AND Apache-2.0 AND BSD-3-Clause AND NOASSERTION AND bzip2-1.0.6"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+      Match on License under MIT, Because the NuGet package is built directly from the ASP.NET Core GitHub repository, and that repository is MIT-licensed, the license for the package is clearly determined as MIT.
+      Additional licenses were detected for third-party components are not part of the build package.

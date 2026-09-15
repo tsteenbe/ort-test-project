@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:EMRServerlessWebService:[3.7.283,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/EMRServerlessWebService"

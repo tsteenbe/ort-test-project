@@ -1,0 +1,14 @@
+- id: "NuGet:Microsoft.AspNetCore:Authentication.Certificate"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/aspnetcore/blob/v8.0.29/src/Security/Authentication/Certificate/src/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate/8.0.29/license": "MIT"
+
+- id: "NuGet:Microsoft.AspNetCore:Authentication.Certificate:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Security/Authentication/Certificate/src"

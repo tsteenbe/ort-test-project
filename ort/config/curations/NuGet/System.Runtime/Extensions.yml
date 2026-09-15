@@ -1,0 +1,50 @@
+- id: "NuGet:System.Runtime:Extensions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Runtime:Extensions"
+  curations:
+    comment: |
+      Map declared license based on
+      Software Repository/system.runtime.extensions.4.3.1.nupkg/dotnet_library_license.txt
+    declared_license_mapping:
+      LicenseRef-scancode-ms-net-library-2019-06 : "LicenseRef-scancode-ms-net-library"
+
+- id: "NuGet:System.Runtime:Extensions"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.Runtime:Extensions"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Runtime.Extensions/src"
+
+- id: "NuGet:System.Runtime:Extensions:4.3.1"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Runtime.Extensions/4.3.1 and
+      https://github.com/dotnet/corefx/commit/e31514dc15903ea4c9e13115f5dd66a618a9cd32.
+    vcs:
+      revision: "e31514dc15903ea4c9e13115f5dd66a618a9cd32"
+
+- id: "NuGet:System.Runtime:Extensions:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Runtime.Extensions/4.3.0 and
+      https://github.com/dotnet/corefx/commit/10a9d1a2e19bca9ac65bf92ba4db20f521bb7b35.
+    vcs:
+      revision: "10a9d1a2e19bca9ac65bf92ba4db20f521bb7b35"

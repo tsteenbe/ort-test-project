@@ -1,0 +1,79 @@
+- id: "NuGet:System.Text:Json"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Text:Json:[10.0.2,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:System.Text:Json:[10.0.2,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/System.Text.Json/src"
+
+- id: "NuGet:System.Text:Json:[5.0.0,10.0.2["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Text:Json:[5.0.0,10.0.2["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Text.Json/src"
+
+- id: "NuGet:System.Text:Json:[4.7.2,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/corefx/blob/release/3.1/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v6.0.10/src/runtime/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v7.0.0/src/runtime/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v8.0.5/src/runtime/LICENSE.TXT,
+      https://github.com/dotnet/dotnet/blob/v8.0.6/src/runtime/LICENSE.TXT and
+      https://github.com/dotnet/dotnet/blob/v10.0.1/src/runtime/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Text.Json/4.7.2/license": "MIT"
+      "https://www.nuget.org/packages/System.Text.Json/6.0.10/license": "MIT"
+      "https://www.nuget.org/packages/System.Text.Json/7.0.0/license": "MIT"
+      "https://www.nuget.org/packages/System.Text.Json/8.0.5/license": "MIT"
+      "https://www.nuget.org/packages/System.Text.Json/8.0.6/license": "MIT"
+      "https://www.nuget.org/packages/System.Text.Json/10.0.1/license": "MIT"
+
+- id: "NuGet:System.Text:Json:[4.6.0,4.7.2]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Text:Json:[4.6.0,4.7.2]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Text.Json/src"
+
+- id: "NuGet:System.Text:Json:4.7.2"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Json/4.7.2 and
+      https://github.com/dotnet/runtime/commits/main/src/libraries/System.Text.Json/src.
+    vcs:
+      revision: "14094d2a6363d9aa40d39ffa63b52279be3e4ce6"

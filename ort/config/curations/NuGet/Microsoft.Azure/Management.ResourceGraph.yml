@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.ResourceGraph"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/resourcegraph/Microsoft.Azure.Management.ResourceGraph"

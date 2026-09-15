@@ -1,0 +1,7 @@
+- id: "NuGet:Apache:Avro:1.12.1"
+  curations:
+    source_artifact:
+      url: "https://github.com/apache/avro/archive/refs/tags/release-1.12.1.tar.gz"
+      hash:
+        value: "C915B531ED952C067A56810C8B0A87F4D8837079B45C73EBDD6065D8E0A54381"
+        algorithm: "SHA-256"

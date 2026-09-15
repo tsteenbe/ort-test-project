@@ -1,0 +1,17 @@
+---
+id: "NuGet:Azure:Core:1.45.0"
+source_code_origin: VCS
+license_finding_curations:
+- path: "sdk/core/Azure.Core/README.md"
+  start_lines: "253"
+  line_count: 5
+  detected_license: "NOASSERTION"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "INCORRECT"
+  comment: |
+    Match on contributor license agreement text:
+    'This project welcomes contributions and suggestions.
+    Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that
+    you have the right to, and actually do, grant us the rights to use your contribution.
+    For details, visit https://cla.microsoft.com.' See file in 
+    https://github.com/Azure/azure-sdk-for-net/blob/015c8abd1090b141389beb9e151971e1ed63c363/sdk/core/Azure.Core/README.md?plain=1#L253C1-L255C281

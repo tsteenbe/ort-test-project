@@ -1,0 +1,31 @@
+- id: "NuGet:Microsoft.Identity:Web.Sidecar"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Identity:Web.Sidecar"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.Identity.Web.Sidecar.
+    vcs:
+      type: "Git"
+      url: "https://github.com/AzureAD/microsoft-identity-web.git"
+
+- id: "NuGet:Microsoft.Identity:Web.Sidecar"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.Identity.Web.Sidecar"
+
+- id: "NuGet:Microsoft.Identity:Web.Sidecar"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/microsoft-identity-web/blob/4.12.2/LICENSE#L1-L21.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Identity.Web.Sidecar/4.10.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Identity.Web.Sidecar/4.11.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Identity.Web.Sidecar/4.12.2/license": "MIT"

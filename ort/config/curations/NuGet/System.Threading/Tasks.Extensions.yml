@@ -1,0 +1,30 @@
+- id: "NuGet:System.Threading:Tasks.Extensions"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Threading:Tasks.Extensions"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.Threading:Tasks.Extensions"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Threading.Tasks.Extensions/src"
+
+- id: "NuGet:System.Threading:Tasks.Extensions:4.5.4"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      There is a 'version.txt' file inside the .nupkg archive that identifies the commit used for this version, see
+      https://www.nuget.org/api/v2/package/System.Threading.Tasks.Extensions/4.5.4 and
+      https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f/src/System.Threading.Tasks.Extensions.
+    vcs:
+      revision: "7601f4f6225089ffb291dc7d58293c7bbf5c5d4f"

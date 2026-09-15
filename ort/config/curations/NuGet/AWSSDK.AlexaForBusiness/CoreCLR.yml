@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.AlexaForBusiness:CoreCLR:[3.3.201,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/AlexaForBusiness"

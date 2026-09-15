@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:DeploymentManager"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/deploymentmanager/Azure.ResourceManager.DeploymentManager"

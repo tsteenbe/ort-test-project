@@ -1,0 +1,67 @@
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Caching/StackExchangeRedis/src"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/aspnetcore/src/Caching/StackExchangeRedis/src"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[9.0.0,9.0.12]"
+  curations:
+    comment: |
+      Mappiing declared license based on
+      https://github.com/dotnet/aspnetcore/blob/v9.0.0/LICENSE.txt and
+      https://github.com/dotnet/aspnetcore/blob/v9.0.12/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis/9.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis/9.0.12/license": "MIT"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[6.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnetcore.git"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[6.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Caching/StackExchangeRedis/src"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[2.2.0,6.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/extensions.git"
+
+- id: "NuGet:Microsoft.Extensions:Caching.StackExchangeRedis:[2.2.0,6.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Caching/StackExchangeRedis/src"

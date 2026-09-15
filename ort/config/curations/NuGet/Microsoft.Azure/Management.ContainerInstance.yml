@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.ContainerInstance"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/containerinstance/Microsoft.Azure.Management.ContainerInstance"

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:ARCZonalShift:[3.7.426,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ARCZonalShift"

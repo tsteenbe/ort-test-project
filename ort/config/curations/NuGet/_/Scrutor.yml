@@ -1,0 +1,7 @@
+- id: "NuGet::Scrutor"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/khellang/Scrutor/blob/v3.3.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Scrutor/3.3.0/license": "MIT"

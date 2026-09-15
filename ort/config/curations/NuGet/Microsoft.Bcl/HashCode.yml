@@ -1,0 +1,8 @@
+- id: "NuGet:Microsoft.Bcl:HashCode"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/Microsoft.Bcl.HashCode/1.1.0/license.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Bcl.HashCode/1.1.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Bcl.HashCode/6.0.0/license": "MIT"

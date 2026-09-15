@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Views.TestCommon:[2.2.1,2.2.2]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Mvc/test/Microsoft.AspNetCore.Mvc.Views.TestCommon"
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Views.TestCommon:[2.2.3,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Mvc/shared/Mvc.Views.TestCommon"

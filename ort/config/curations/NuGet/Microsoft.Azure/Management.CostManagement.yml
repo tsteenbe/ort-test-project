@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.CostManagement"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/cost-management/Microsoft.Azure.Management.CostManagement"

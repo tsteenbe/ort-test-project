@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:Authorization:(,2.2.0]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Authorization"
+- id: "NuGet:Microsoft.AspNetCore:Authorization:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Security/Authorization/Core/src"

@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.MixedReality:ObjectAnchors.Conversion"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/objectanchors/Azure.MixedReality.ObjectAnchors.Conversion"

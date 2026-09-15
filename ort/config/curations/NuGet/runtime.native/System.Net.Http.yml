@@ -1,0 +1,42 @@
+- id: "NuGet:runtime.native:System.Net.Http"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:runtime.native:System.Net.Http"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:runtime.native:System.Net.Http"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Native/Unix/System.Net.Http.Native"
+
+- id: "NuGet:runtime.native:System.Net.Http:4.3.1"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/runtime.native.System.Net.Http/4.3.1 and
+      https://github.com/dotnet/corefx/commit/a379791e7aa2d4008f21108556416793828a8af3.
+    vcs:
+      revision: "a379791e7aa2d4008f21108556416793828a8af3"
+
+- id: "NuGet:runtime.native:System.Net.Http:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/runtime.native.System.Net.Http/4.3.0 and
+      https://github.com/dotnet/corefx/commit/44e5bdafb8d989a220c9cf1b94f31a64a6e4f052.
+    vcs:
+      revision: "44e5bdafb8d989a220c9cf1b94f31a64a6e4f052"

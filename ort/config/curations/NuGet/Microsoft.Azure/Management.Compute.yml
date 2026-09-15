@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Compute"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/compute/Microsoft.Azure.Management.Compute"

@@ -1,0 +1,32 @@
+- id: "NuGet:Microsoft.Identity:Client.Extensions.Msal"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.Identity:Client.Extensions.Msal"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/blob/4.78.0/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/4.61.3/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/4.78.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/4.83.1/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal/4.84.2/license": "MIT"
+
+- id: "NuGet:Microsoft.Identity:Client.Extensions.Msal:[4.56.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/client/Microsoft.Identity.Client.Extensions.Msal"
+
+- id: "NuGet:Microsoft.Identity:Client.Extensions.Msal:[2.9.14,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.Identity.Client.Extensions.Msal.
+    vcs:
+      type: "Git"
+      url: "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet.git"

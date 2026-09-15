@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:FluidRelay"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/fluidrelay/Azure.ResourceManager.FluidRelay"

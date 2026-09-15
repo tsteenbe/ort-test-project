@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:MQ:[3.3.198,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/MQ"

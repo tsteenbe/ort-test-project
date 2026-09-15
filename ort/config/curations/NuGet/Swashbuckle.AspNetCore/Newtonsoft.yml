@@ -1,0 +1,8 @@
+- id: "NuGet:Swashbuckle.AspNetCore:Newtonsoft:[10.2.1,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/v10.2.1/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Swashbuckle.AspNetCore.Newtonsoft/10.2.1/license": "MIT"
+      "https://www.nuget.org/packages/Swashbuckle.AspNetCore.Newtonsoft/10.2.3/license": "MIT"

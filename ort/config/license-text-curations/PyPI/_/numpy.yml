@@ -1,0 +1,46 @@
+- id: "PyPI::numpy"
+  curations:
+    - license_id: NCSA
+      comment: |
+        The license text found in package sources matches the NCSA license with 0.91 similarity.
+        Found in package sources:
+        - 2.5.1:
+          url: https://files.pythonhosted.org/packages/22/fd/89965aa4ac08c74998539fcbf24fa3540f3e15237fbeb6bcf9c908f4aade/numpy-2.5.1.tar.gz
+          files:
+            - numpy-2.5.1/numpy/random/LICENSE.md#L1-L35
+      license_text: |-
+        This software is dual-licensed under the The University of Illinois/NCSA
+        Open Source License (NCSA) and The 3-Clause BSD License
+
+        # NCSA Open Source License
+        Copyright (c) 2019 Kevin Sheppard. All rights reserved.
+
+        Developed by: Kevin Sheppard (<kevin.sheppard@economics.ox.ac.uk>,
+        <kevin.k.sheppard@gmail.com>)
+        [http://www.kevinsheppard.com](http://www.kevinsheppard.com)
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal with
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        of the Software, and to permit persons to whom the Software is furnished to do
+        so, subject to the following conditions:
+
+        Redistributions of source code must retain the above copyright notice, this
+        list of conditions and the following disclaimers.
+
+        Redistributions in binary form must reproduce the above copyright notice, this
+        list of conditions and the following disclaimers in the documentation and/or
+        other materials provided with the distribution.
+
+        Neither the names of Kevin Sheppard, nor the names of any contributors may be
+        used to endorse or promote products derived from this Software without specific
+        prior written permission.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH
+        THE SOFTWARE.

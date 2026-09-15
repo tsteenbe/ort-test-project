@@ -1,0 +1,24 @@
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:(,2.1.21["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http.Extensions"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:2.1.21"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Http/Http.Extensions/src"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:(2.1.21,2.3.8["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Http.Extensions"
+- id: "NuGet:Microsoft.AspNetCore:Http.Extensions:[2.3.9,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "**/src/Http/Http.Extensions/src"

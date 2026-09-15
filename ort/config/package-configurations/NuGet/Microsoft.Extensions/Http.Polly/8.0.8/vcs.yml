@@ -1,0 +1,38 @@
+---
+id: "NuGet:Microsoft.Extensions:Http.Polly:8.0.8"
+vcs:
+  type: "Git"
+  url: "https://github.com/dotnet/aspnetcore"
+  revision: "954f61dd38b33caa2b736c73530bd5a294174437"
+path_excludes:
+- pattern: "test/**"
+  reason: "TEST_OF"
+license_finding_curations:
+- path: "src/HttpRequestMessageExtensions.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: "True Positive"
+- path: "src/PolicyHttpMessageHandler.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: "True Positive"
+- path: "src/DependencyInjection/PollyHttpClientBuilderExtensions.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: "True Positive"
+- path: "src/DependencyInjection/PollyServiceCollectionExtensions.cs"
+  start_lines: "2"
+  line_count: 1
+  detected_license: "NOASSERTION"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: "True Positive"

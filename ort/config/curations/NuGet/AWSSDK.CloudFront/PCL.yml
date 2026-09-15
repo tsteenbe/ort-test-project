@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.CloudFront:PCL:[3.1.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/CloudFront"

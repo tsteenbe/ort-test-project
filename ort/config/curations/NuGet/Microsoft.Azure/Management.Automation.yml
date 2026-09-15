@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Automation"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/automation/Microsoft.Azure.Management.Automation"

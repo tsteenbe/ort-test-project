@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.MediaLive:CoreCLR:[3.3.197,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/MediaLive"

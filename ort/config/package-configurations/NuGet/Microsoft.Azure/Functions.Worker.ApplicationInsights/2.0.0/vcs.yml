@@ -1,0 +1,9 @@
+---
+id: "NuGet:Microsoft.Azure:Functions.Worker.ApplicationInsights:2.0.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/Azure/azure-functions-dotnet-worker.git"
+  revision: "d8b5fe998a8c92819b8ee41d2569d2525413e9c5"
+path_excludes:
+- pattern: "**/README.md"
+  reason: "DOCUMENTATION_OF"

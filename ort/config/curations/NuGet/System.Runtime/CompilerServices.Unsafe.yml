@@ -1,0 +1,14 @@
+- id: "NuGet:System.Runtime:CompilerServices.Unsafe:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Runtime.CompilerServices.Unsafe"
+
+- id: "NuGet:System.Runtime:CompilerServices.Unsafe:[6.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v6.0.0/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/6.0.0/license": "MIT"

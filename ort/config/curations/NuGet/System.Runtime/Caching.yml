@@ -1,0 +1,15 @@
+- id: "NuGet:System.Runtime:Caching:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Runtime.Caching"
+
+- id: "NuGet:System.Runtime:Caching:[6.0.0,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v6.0.0/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Runtime.Caching/6.0.0/license": "MIT"
+      "https://www.nuget.org/packages/System.Runtime.Caching/8.0.0/license": "MIT"

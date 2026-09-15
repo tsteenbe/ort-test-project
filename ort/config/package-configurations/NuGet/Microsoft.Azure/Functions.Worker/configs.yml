@@ -1,0 +1,24 @@
+---
+id: "NuGet:Microsoft.Azure:Functions.Worker:(,2.51.0]"
+source_code_origin: "VCS"
+license_finding_curations:
+- path: "README.md"
+  start_lines: "85"
+  line_count: 9
+  detected_license: "NOASSERTION"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+      The scanner triggered NOASSERTION on the Microsoft Contributor License Agreement (CLA) text. 
+      Concluding the specific MS-CLA reference for this section.
+      https://github.com/Azure/azure-functions-dotnet-worker/blob/2.51.0/README.md?plain=1#L85-L93
+- path: "protos/azure-functions-language-worker-protobuf/README.md"
+  start_lines: "81"
+  line_count: 9
+  detected_license: "NOASSERTION"
+  concluded_license: "LicenseRef-scancode-ms-cla"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+      The scanner triggered NOASSERTION on the Microsoft Contributor License Agreement (CLA) text.
+      Concluding the specific MS-CLA reference for this section.
+      https://github.com/Azure/azure-functions-dotnet-worker/blob/2.51.0/protos/azure-functions-language-worker-protobuf/README.md?plain=1#L81-L89

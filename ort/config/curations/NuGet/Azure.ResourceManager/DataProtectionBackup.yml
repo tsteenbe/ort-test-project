@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:DataProtectionBackup"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/dataprotection/Azure.ResourceManager.DataProtectionBackup"

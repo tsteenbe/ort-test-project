@@ -1,0 +1,74 @@
+- id: "NuGet:System:Buffers"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/maintenance-packages/blob/d0c2a5a8/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Buffers/4.6.0/license": "MIT"
+
+- id: "NuGet:System:Buffers:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Buffers"
+- id: "NuGet:System:Buffers:4.5.1"
+  curations:
+    comment: |
+      Set the VCS information to point to the exact commit used to build this package version.
+
+      Long explanation // Investigation:
+      - system.buffers.4.5.1.nupkg is a legacy .NET Core package
+        originating from the CoreFX era (pre-.NET 5).
+        This package predates repository consolidation and SourceLink support
+        (merge of serval repositories such as corefx, coreclr, etc. into one unified repo:
+        https://github.com/dotnet/runtime).
+
+      - There is a CoreFX repository that historically contained the source code:
+        https://github.com/dotnet/corefx
+        but it does not provide a tag/release for this specific package version.
+        Latest tag/release in this repository is 3.1.32,
+        where source code existed under following path:
+        https://github.com/dotnet/corefx/tree/v3.1.32/src/System.Buffers
+        but complete repository was archived, it states:
+        "This repository was archived by the owner on Jan 23, 2023. It is now read-only."
+
+      - There is a document:
+        https://github.com/dotnet/corefx/blob/master/Documentation/building/versioning.md
+        where we can understand that the CoreFX build/versioning system
+        used MSBuild properties to compute NuGet package versions during the build,
+        and they were not derived from Git tags.
+        As a result, the repository cannot guarantee the existence
+        of a Git tag corresponding to every published package version.
+
+      - There is also notice in About section of the repository https://github.com/dotnet/corefx:
+        "This repo is used for servicing PR's for .NET Core 2.1 and 3.1.
+        Please visit us at https://github.com/dotnet/runtime"
+
+      - Active development later moved to https://github.com/dotnet/runtime,
+        which starts at version 5.0.0 and does not contain historical 4.x
+        release mappings.
+
+      - However, the NuGet package: 'system.buffers.4.5.1.nupkg', downloaded from:
+        https://www.nuget.org/api/v2/package/System.Buffers/4.5.1,
+        and extracted, contains a file 'version.txt' with the value:
+          '7601f4f6225089ffb291dc7d58293c7bbf5c5d4f'
+
+          < ivica-stanisic@PF468LTW ort-config: > $ cat ../OSPO-6869/system.buffers.4.5.1-extracted/version.txt
+          7601f4f6225089ffb291dc7d58293c7bbf5c5d4f
+
+      - This value is a Git commit SHA identifying the exact source revision
+        used to build the package.
+
+      - The System:Buffers sources for this package version are
+        located under the path: 'src/System.Buffers' in the
+        https://github.com/dotnet/corefx repository at the specified revision.
+        https://github.com/dotnet/corefx/tree/7601f4f6225089ffb291dc7d58293c7bbf5c5d4f/src/System.Buffers
+
+      - Therefore, this specific commit in the CoreFX repository is set
+        to resolve the provenance for this package version.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+      revision: "7601f4f6225089ffb291dc7d58293c7bbf5c5d4f"
+      path: "src/System.Buffers"

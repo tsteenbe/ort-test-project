@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:ConnectCases:[3.7.370,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ConnectCases"

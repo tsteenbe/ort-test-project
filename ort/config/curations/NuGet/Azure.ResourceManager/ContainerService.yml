@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:ContainerService"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/containerservice/Azure.ResourceManager.ContainerService"

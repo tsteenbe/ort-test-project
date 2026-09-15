@@ -1,0 +1,8 @@
+- id: "NuGet:Microsoft.Extensions:Azure"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Microsoft.Extensions.Azure_1.12.0/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Azure/1.12.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Azure/1.14.0/license": "MIT"

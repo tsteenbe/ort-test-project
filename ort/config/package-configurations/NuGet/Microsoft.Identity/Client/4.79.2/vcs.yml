@@ -1,0 +1,9 @@
+---
+id: "NuGet:Microsoft.Identity:Client:4.79.2"
+vcs:
+  type: "Git"
+  url: "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet.git"
+  revision: "7acc1fa8f947a09222f9fbd754f76b74fc9e38a9"
+path_excludes:
+- pattern: "CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF" 

@@ -1,0 +1,8 @@
+---
+id: "NuGet:Microsoft.Data:SqlClient:6.0.2"
+source_code_origin: VCS
+path_excludes:
+- pattern: "CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+       Excluded because CONTRIBUTING.md contains contribution guidelines only and no licensing or distributable code.

@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Consumption"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/consumption/Microsoft.Azure.Management.Consumption"

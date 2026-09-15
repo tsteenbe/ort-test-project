@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:AppConfiguration"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/appconfiguration/Azure.ResourceManager.AppConfiguration"

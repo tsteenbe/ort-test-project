@@ -1,0 +1,19 @@
+---
+id: "NuGet:Microsoft:ApplicationInsights:[2.22.0,2.23.0]"
+source_code_origin: VCS
+path_excludes:
+- pattern: "LOGGING/ThirdPartyNotices.txt"
+  reason: "OPTIONAL_COMPONENT_OF" 
+  comment: |
+       ThirdPartyNotices.txt https://github.com/microsoft/ApplicationInsights-dotnet/blob/43825e06a22cdfb702fc199a7ba99a7d541d48c6/LOGGING/ThirdPartyNotices.txt#L1C1-L290C57 
+       is not part of the final distribution, and the DLL does not show any presence of third-party content.
+- pattern: "NETCORE/ThirdPartyNotices.txt"
+  reason: "OPTIONAL_COMPONENT_OF" 
+  comment: |
+      ThirdPartyNotices.txt https://github.com/microsoft/ApplicationInsights-dotnet/blob/43825e06a22cdfb702fc199a7ba99a7d541d48c6/NETCORE/ThirdPartyNotices.txt#L1C1-L219C69
+      is not part of the final distribution, and the DLL does not show any presence of third-party content.
+- pattern: "WEB/ThirdPartyNotices.txt"
+  reason: "OPTIONAL_COMPONENT_OF" 
+  comment: |
+      ThirdPartyNotices.txt https://github.com/microsoft/ApplicationInsights-dotnet/blob/43825e06a22cdfb702fc199a7ba99a7d541d48c6/WEB/ThirdPartyNotices.txt#L1C1-L541C111
+      is not part of the final distribution, and the DLL does not show any presence of third-party content.

@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.ApplicationAutoScaling:PCL:[3.1.70,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ApplicationAutoScaling"

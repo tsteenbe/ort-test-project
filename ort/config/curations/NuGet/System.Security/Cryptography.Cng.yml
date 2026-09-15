@@ -1,0 +1,100 @@
+- id: "NuGet:System.Security:Cryptography.Cng"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Security:Cryptography.Cng"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v5.0.0/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Security.Cryptography.Cng/5.0.0/license": "MIT"
+
+- id: "NuGet:System.Security:Cryptography.Cng:[5.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/System.Security.Cryptography.Cng.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Security:Cryptography.Cng:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Security.Cryptography.Cng/src"
+
+- id: "NuGet:System.Security:Cryptography.Cng:(,5.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+      Found VCS via package registry, see https://www.nuget.org/packages/System.Security.Cryptography.Cng.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.Security:Cryptography.Cng:(,5.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Security.Cryptography.Cng/src"
+
+- id: "NuGet:System.Security:Cryptography.Cng:4.7.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.7.0 (12/3/2019) and
+      https://github.com/dotnet/corefx/tree/08b7babd9c37b6549ab4929c60e80429082d6c21.
+    vcs:
+      revision: "08b7babd9c37b6549ab4929c60e80429082d6c21"
+
+- id: "NuGet:System.Security:Cryptography.Cng:4.6.1"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.6.1 (11/18/2019) and
+      https://github.com/dotnet/corefx/tree/08b7babd9c37b6549ab4929c60e80429082d6c21.
+    vcs:
+      revision: "08b7babd9c37b6549ab4929c60e80429082d6c21"
+
+- id: "NuGet:System.Security:Cryptography.Cng:4.6.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.6.0 (9/23/2019) and
+      https://github.com/dotnet/corefx/tree/08b7babd9c37b6549ab4929c60e80429082d6c21.
+    vcs:
+      revision: "08b7babd9c37b6549ab4929c60e80429082d6c21"
+
+- id: "NuGet:System.Security:Cryptography.Cng:4.5.2"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.6.0 (1/14/2020) and
+      https://github.com/dotnet/corefx/tree/08b7babd9c37b6549ab4929c60e80429082d6c21.
+    vcs:
+      revision: "08b7babd9c37b6549ab4929c60e80429082d6c21"
+
+- id: "NuGet:System.Security:Cryptography.Cng:4.5.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Security.Cryptography.Cng/4.5.0 (5/29/2018) and
+      https://github.com/dotnet/corefx/tree/91d7e62bbf28094a2b419b87847bcd6a7658564d.
+    vcs:
+      revision: "91d7e62bbf28094a2b419b87847bcd6a7658564d"

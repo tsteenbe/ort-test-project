@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:DevCenter"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/devcenter/Azure.ResourceManager.DevCenter"

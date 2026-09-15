@@ -1,0 +1,29 @@
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Versioning"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Versioning"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/aspnet-api-versioning/blob/v5.1.0/LICENSE.txt#L1-L21.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Versioning/5.1.0/license": "MIT"
+
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Versioning"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Versioning.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/aspnet-api-versioning.git"
+
+- id: "NuGet:Microsoft.AspNetCore:Mvc.Versioning:[2.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Mvc.Versioning"

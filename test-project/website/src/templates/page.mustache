@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} &middot; {{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="stylesheet" href="/assets/site.min.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="/">{{ site.title }}</a>
+      <nav>
+        {{# site.navigation }}
+        <a href="{{ url }}">{{ label }}</a>
+        {{/ site.navigation }}
+      </nav>
+    </header>
+
+    <main class="page">
+      <h1>{{ page.title }}</h1>
+      {{{ page.content }}}
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; {{ site.year }} {{ site.owner }}. Released under the BSD-2-Clause license.</p>
+    </footer>
+
+    <script src="/assets/site.min.js"></script>
+  </body>
+</html>

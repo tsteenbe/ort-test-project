@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.CodeArtifact:PCL:[3.3.758,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/CodeArtifact"

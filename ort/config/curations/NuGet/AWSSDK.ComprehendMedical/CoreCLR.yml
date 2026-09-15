@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.ComprehendMedical:CoreCLR:[3.3.416,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/ComprehendMedical"

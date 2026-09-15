@@ -1,0 +1,28 @@
+- id: "NuGet:Grpc.Net:ClientFactory"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Grpc.Net:ClientFactory:[2.23.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable in internal Artifactory.
+    vcs:
+      type: "Git"
+      url: "https://github.com/grpc/grpc-dotnet.git"
+
+- id: "NuGet:Grpc.Net:ClientFactory:[2.23.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within repository.
+    vcs:
+      path: "src/Grpc.Net.ClientFactory"
+
+- id: "NuGet:Grpc.Net:ClientFactory:[2.23.0,)"
+  curations:
+    comment: |
+      Mapping declared license based on
+      https://github.com/grpc/grpc-dotnet/blob/v2.65.0/LICENSE
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Grpc.Net.ClientFactory/2.65.0/license": "Apache-2.0"

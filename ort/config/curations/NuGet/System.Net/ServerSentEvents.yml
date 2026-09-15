@@ -1,0 +1,45 @@
+- id: "NuGet:System.Net:ServerSentEvents"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Net:ServerSentEvents"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.2/src/runtime/LICENSE.TXT
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Net.ServerSentEvents/10.0.2/license": "MIT"
+
+- id: "NuGet:System.Net:ServerSentEvents:[10.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/system.net.serversentevents
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/dotnet.git"
+
+- id: "NuGet:System.Net:ServerSentEvents:[10.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/runtime/src/libraries/System.Net.ServerSentEvents/src"
+
+- id: "NuGet:System.Net:ServerSentEvents:[9.0.0,10.0.0["
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/system.net.serversentevents
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Net:ServerSentEvents:[9.0.0,10.0.0["
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Net.ServerSentEvents/src"

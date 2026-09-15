@@ -1,0 +1,31 @@
+- id: "NuGet:System.Security:AccessControl"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Security:AccessControl:[5.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/system.security.accesscontrol/.
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/runtime.git"
+
+- id: "NuGet:System.Security:AccessControl:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Security.AccessControl/src"
+
+- id: "NuGet:System.Security:AccessControl"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/v5.0.0/LICENSE.TXT#L1-L23,
+      https://github.com/dotnet/runtime/blob/v6.0.0/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/System.Security.AccessControl/5.0.0/license": "MIT"
+      "https://www.nuget.org/packages/System.Security.AccessControl/6.0.0/license": "MIT"

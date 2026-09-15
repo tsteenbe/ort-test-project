@@ -1,0 +1,41 @@
+---
+id: "Conan::re2:(,20240702]"
+path_excludes:
+- pattern: "**/*.bazel"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*fuzz*/**"
+  reason: "TEST_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.bazelrc"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/BUILD"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CMakeLists.txt"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CONTRIBUTORS"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    CONTRIBUTORS is excluded as it is not applicable for the build package.
+- pattern: "**/Makefile*"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/SECURITY.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/benchlog/**"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    benchlog folder contains log files and log files are not part of the final distribution.
+- pattern: "**/build*.sh"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/re2/make_unicode_casefold.py"
+  reason: "BUILD_TOOL_OF"
+  comment: |
+    Exclude make_unicode_casefold.py as it is a build-time script used to generate Unicode case-folding tables and not part of the runtime source code.
+- pattern: "**/setup.py"
+  reason: "BUILD_TOOL_OF"

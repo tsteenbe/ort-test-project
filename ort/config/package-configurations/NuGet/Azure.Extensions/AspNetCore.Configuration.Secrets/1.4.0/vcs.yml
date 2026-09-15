@@ -1,0 +1,33 @@
+---
+id: "NuGet:Azure.Extensions:AspNetCore.Configuration.Secrets:1.4.0"
+source_code_origin: VCS
+license_finding_curations:
+- path: "sdk/webpubsub/Microsoft.Azure.WebPubSub.Common/src/Shared/WebPubSubStatusCode.cs"
+  start_lines: "2"
+  line_count: 6
+  detected_license: "(AGPL-3.0-or-later OR BSD-3-Clause) AND CC-BY-SA-4.0"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path - https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.4.0/sdk/webpubsub/Microsoft.Azure.WebPubSub.Common/src/Shared/WebPubSubStatusCode.cs#L1-L2
+- path: "sdk/provisioning/Azure.Provisioning.Sql/src/Generated/Models/ManagedInstanceLicenseType.cs"
+  start_lines: "2"
+  line_count: 8
+  detected_license: "MIT OR GPL-3.0-only"
+  concluded_license: "MIT"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Based on the investigation license identified as MIT
+    path - https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.4.0/sdk/provisioning/Azure.Provisioning.Sql/src/Generated/Models/ManagedInstanceLicenseType.cs#L1-L2
+- path: "CONTRIBUTING.md"
+  start_lines: "557"
+  line_count: 5
+  detected_license: "MIT AND Apache-2.0 AND GPL-1.0-or-later AND NOASSERTION"
+  concluded_license: "NONE"
+  reason: "INCORRECT"
+  comment: |
+    Based on the investigation no license identified.
+    ScanCode detected license identifiers from policy text that discusses acceptable third-party dependency licenses.
+    CONTRIBUTING.md does not define licensing terms for the project.
+    path - https://github.com/Azure/azure-sdk-for-net/blob/Azure.Extensions.AspNetCore.Configuration.Secrets_1.4.0/CONTRIBUTING.md#third-party-dependencies

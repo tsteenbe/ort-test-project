@@ -1,0 +1,12 @@
+- id: "NuGet:Microsoft.AspNetCore:Antiforgery:2.1.7"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Antiforgery/src/Microsoft.AspNetCore.Antiforgery"
+- id: "NuGet:Microsoft.AspNetCore:Antiforgery:[2.1.8,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Antiforgery/src"

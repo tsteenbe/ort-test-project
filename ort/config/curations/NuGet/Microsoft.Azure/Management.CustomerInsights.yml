@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.CustomerInsights"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/customer-insights/Microsoft.Azure.Management.CustomerInsights"

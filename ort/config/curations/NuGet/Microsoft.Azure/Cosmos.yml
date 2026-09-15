@@ -1,0 +1,10 @@
+- id: "NuGet:Microsoft.Azure:Cosmos:[3.47.2,)"
+  curations:
+    comment: |
+      Map declared license based on
+      https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.47.2/license
+      https://github.com/Azure/azure-cosmos-dotnet-v3/blob/3.61.0/LICENSE#L1-L21
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.47.2/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.61.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.62.0/license": "MIT"

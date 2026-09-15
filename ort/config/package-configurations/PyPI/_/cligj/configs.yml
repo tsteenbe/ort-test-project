@@ -1,0 +1,15 @@
+---
+id: "PyPI::cligj:(,0.7.2]"
+path_excludes:
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/CHANGES.txt"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/PKG-INFO"
+  reason: "DATA_FILE_OF"
+  comment: |
+    Package metadata file generated during build. Not included of the distributed runtime artifact.
+- pattern: "**/setup.cfg"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/setup.py"
+  reason: "BUILD_TOOL_OF"

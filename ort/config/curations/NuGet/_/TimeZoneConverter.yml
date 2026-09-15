@@ -1,0 +1,13 @@
+- id: "NuGet::TimeZoneConverter"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet::TimeZoneConverter"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/mattjohnsonpint/TimeZoneConverter/blob/7.2.0/LICENSE.txt
+    declared_license_mapping:
+      "https://www.nuget.org/packages/TimeZoneConverter/7.2.0/license": "MIT"

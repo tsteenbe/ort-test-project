@@ -1,0 +1,130 @@
+---
+id: "Conan::openssl:[3.2.0,3.5.0]"
+path_excludes:
+- pattern: "**/*.m4"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*Test*/**"
+  reason: "TEST_OF"
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*fuzz*/**"
+  reason: "TEST_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/CHANGES.md"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    CHANGES.md is a documentation file and is not present in the binary distribution.
+- pattern: "**/CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    CONTRIBUTING.md is excluded as it is not applicable for the build package.
+- pattern: "**/Configure"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/INSTALL"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/Makefile*"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/NEWS.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/cmake/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/demos/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/external/perl/Text-Template-**/**"
+  reason: "BUILD_TOOL_OF"
+  comment: |
+    The [Text-Template-1.56] directory is used during the Configure phase (not compilation), and only under specific conditions
+    The bundled Text-Template-1.56 is used only if:
+    The system doesn't have Text::Template installed, OR
+    The installed version is older than 1.46
+    This ensures OpenSSL can be configured even on systems without proper Perl module dependencies installed.
+- pattern: "**/test_*.c"
+  reason: "TEST_OF"
+- pattern: "**/tools/**"
+  reason: "BUILD_TOOL_OF"
+license_finding_curations:
+- path: "**/crypto/**"
+  start_lines: "2"
+  detected_license: "(GPL-2.0-only OR BSD-2-Clause) AND Apache-2.0 AND OpenSSL"
+  concluded_license: "BSD-2-Clause OR Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Dual License detected between 'Apache License 2.0' OR 'BSD-2-Clause' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/chacha/chacha_riscv.c#L2-#L36'.
+    OpenSSL is detected by the tool because of the URL: 'https://openssl-library.org/source/license/index.html' due to the content mentioned below:
+    'For any release made before OpenSSL 3.0 (namely the 1.1.1, 1.1.0, 1.0.2, and all prior releases including those not currently supported), the dual OpenSSL and SSLeay license applies.'.
+    Note that it is evident from the above content that OpenSSL License does not apply here in this case as the version is beyond OpenSSL 3.0.
+    There is no mentioning of 'GPL-2.0-only' License at all in all the files inside crypto folder.
+- path: "**/crypto/camellia/asm/**.pl"
+  start_lines: "4"
+  line_count: 14
+  detected_license: "OpenSSL AND Apache-2.0 AND (GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1 OR BSD-3-Clause)"
+  concluded_license: "Apache-2.0 AND (BSD-2-Clause OR MPL-1.1 OR LGPL-2.1-or-later OR GPL-2.0-or-later)"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/camellia/asm/cmll-x86_64.pl#L2-#L7'
+    Multiple License between 'BSD-2-Clause OR MPL-1.1 OR LGPL-2.1-or-later OR GPL-2.0-or-later' detected at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/camellia/asm/cmll-x86_64.pl#L11-#L18'.
+    BSD-2-Clause was detected after further investigation of the URL: 'http://www.openssl.org/~appro/camellia/' which pointed to the following URL:
+    'https://web.archive.org/web/20220420022258/https://www.openssl.org/~appro/camellia/dist/BSD_license.txt'.
+    There is no mentioning of 'OpenSSL' License at all in all the .pl files inside the asm folder.
+- path: "**/crypto/sha/asm/**.pl"
+  start_lines: "4"
+  line_count: 13
+  detected_license: "OpenSSL AND Apache-2.0 AND (OpenSSL OR BSD-3-Clause OR GPL-1.0-or-later)"
+  concluded_license: "Apache-2.0 AND (BSD-3-Clause OR OpenSSL)"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/sha/asm/sha256-armv4.pl#L2-#L7'.
+    Dual License detected between OpenSSL and CRYTOGAMS at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/sha/asm/sha256-armv4.pl#L11-#L14'.
+    CRYPTOGAMS is basically BSD-3-Clause License as per the URL: 'https://web.archive.org/web/20230713032622/http://www.openssl.org/~appro/cryptogams/'.
+    GPL-1.0-or-later License is detected by the tool because of the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/sha/asm/sha256-armv4.pl#L16'.
+    Hence GPL-1.0-or-later is not applicable for these .pl files inside the asm folder.
+- path: "**/crypto/sha/asm/**.pl"
+  start_lines: "4"
+  line_count: 12
+  detected_license: "OpenSSL AND Apache-2.0 AND (OpenSSL OR BSD-3-Clause OR GPL-1.0-or-later OR GPL-2.0-only)"
+  concluded_license: "Apache-2.0 AND (BSD-3-Clause OR OpenSSL)"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/sha/asm/sha512-armv8.pl#L2-#L7'.
+    Dual License detected between OpenSSL and CRYTOGAMS at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/sha/asm/sha512-armv8.pl#L10-#L13'.
+    CRYPTOGAMS is basically BSD-3-Clause License as per the URL: 'https://web.archive.org/web/20230713032622/http://www.openssl.org/~appro/cryptogams/'.
+    GPL-1.0-or-later OR GPL-2.0-only are detected by the tool because of the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/sha/asm/sha512-armv8.pl#L15'.
+    Hence GPL-1.0-or-later OR GPL-2.0-only are not applicable for these .pl files inside the asm folder.
+- path: "**/crypto/poly**/asm/poly**-ppc.pl"
+  start_lines: "4"
+  line_count: 9
+  detected_license: "NOASSERTION AND Apache-2.0 AND OpenSSL"
+  concluded_license: "Apache-2.0 AND (BSD-3-Clause OR OpenSSL)"
+  reason: "REFERENCE"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/poly1305/asm/poly1305-ppc.pl#L2-#L7'.
+    Dual License detected between OpenSSL and CRYTOGAMS at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/poly1305/asm/poly1305-ppc.pl#L11-#L14'.
+    CRYPTOGAMS is basically BSD-3-Clause License as per the URL: 'https://web.archive.org/web/20230713032622/http://www.openssl.org/~appro/cryptogams/'.
+    NOASSERTION is detected by the tool because of the keyword: 'License' detected at multiple location in the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/poly1305/asm/poly1305-ppc.pl#L4-#L13'.
+- path: "**/README.md"
+  detected_license: "LicenseRef-scancode-proprietary-license AND OpenSSL AND Apache-2.0"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/README.md?plain=1#L168-#L173'.
+    OpenSSL License is detected by the tool because of the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/README.md?plain=1#L171'.
+    LicenseRef-scancode-proprietary-license is not at all present in the README.md files respectively.
+- path: "**/funding.json"
+  detected_license: "LicenseRef-scancode-proprietary-license AND OpenSSL AND Apache-2.0"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/funding.json#L25'.
+    OpenSSL License is detected by the tool because of the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/funding.json#L17'.
+    LicenseRef-scancode-proprietary-license is not at all present in the funding.json files respectively.
+- path: "**/crypto/camellia/**"
+  start_lines: "4"
+  line_count: 12
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'Apache License 2.0' at the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/camellia/camellia.c#L2-#L7'.
+    All files inside the camellia folder are Licensed under the 'Apache License 2.0' only.
+    NOASSERTION was detected by the tool because of the keyword: 'License' detected at multiple lines in the URL: 'https://github.com/openssl/openssl/blob/openssl-3.5.0/crypto/camellia/camellia.c#L4-#L7'.
+    All other additional Licenses detected by the tool are not applicable here for all the files inside camellia folder.

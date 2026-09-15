@@ -1,0 +1,36 @@
+- id: "NuGet:Azure.Security:KeyVault.Certificates"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Azure.Security:KeyVault.Certificates"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Security.KeyVault.Certificates_4.8.0/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Security.KeyVault.Certificates/4.6.0/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Security.KeyVault.Certificates/4.8.0/license": "MIT"
+
+- id: "NuGet:Azure.Security:KeyVault.Certificates:[4.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:Azure.Security:KeyVault.Certificates:[4.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/keyvault/Azure.Security.KeyVault.Certificates/src"
+
+- id: "NuGet:Azure.Security:KeyVault.Certificates:4.8.0"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "Azure.Security.KeyVault.Certificates_4.8.0"

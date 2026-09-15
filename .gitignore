@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+
+# Editors and IDEs
+.idea/
+*.iml
+.vscode/
+*~
+*.swp
+
+# --- ORT working directories --------------------------------------------------
+
+# A local clone of the ORT sources, not part of this repository.
+/ort-sources/
+
+# Generated ORT output (analyzer, scanner, advisor, evaluator and reporter results).
+/test-project-ort-files/
+
+# ORT caches and the scanner's file archive.
+/ort/cache/
+/ort/scanner/
+
+# Mount point for a local ScanCode installation.
+/scancode-toolkit/
+
+# --- Build output -------------------------------------------------------------
+
+# Gradle, used by the tooling in ort/config.
+.gradle/
+build/
+
+# Maven, used by test-project/lib-java.
+target/
+
+# Node.js, used by test-project/website. The "public" directory is the generated site.
+node_modules/
+/test-project/website/public/
+npm-debug.log*
+yarn-error.log*
+
+# Python, used by test-project/lib-python.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Rust scratch files. The "target" pattern above also covers test-project/rest-api/target.
+**/*.rs.bk
+
+# Compiled artifacts. The Gradle wrapper JARs are checked in on purpose.
+*.class
+*.jar
+!**/gradle/wrapper/gradle-wrapper.jar

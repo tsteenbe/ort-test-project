@@ -1,0 +1,74 @@
+---
+id: "Conan::c-ares:(,1.34.5]"
+path_excludes:
+- pattern: "**/*.cmake"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*.m4"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.clang-format"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/.reuse/dep5"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    The licensed components are not part of built artifact"
+- pattern: "**/.travis.yml"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CHANGES"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/CMakeLists.txt"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CONTRIBUTING.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/LICENSES/Autoconf-exception-3.0.txt"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    license text in this file is not applicable and limited only for the documentation purpose"
+- pattern: "**/LICENSES/GPL-3.0-or-later.txt"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    license text in this file is not applicable and limited only for the documentation purpose"
+- pattern: "**/LICENSES/LGPL-2.1-or-later.txt"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    license applicable for m4/ax_code_coverage.m4 m4/pkg.m4
+    see: https://github.com/c-ares/c-ares/blob/c93e50f3ebc0373fe57677523ec960f6c1cb0e15/.reuse/dep5#L32
+- pattern: "**/Makefile*"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/RELEASE-NOTES*"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/SECURITY.md"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/build*.sh"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/ci/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/cmake/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/configure.ac"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/install-sh"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/m4/**"
+  reason: "BUILD_TOOL_OF"
+  comment: |
+    This file is a macro for autoconf to detect pthread library.
+- pattern: "**/tools/**"
+  reason: "BUILD_TOOL_OF"
+license_finding_curations:
+- path: "**/ares_getopt.c"
+  start_lines: "4"
+  line_count: 35
+  detected_license: "BSD-3-Clause AND NOASSERTION"
+  concluded_license: "BSD-3-Clause"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on 'BSD-3-Clause license text' at path:
+    https://github.com/c-ares/c-ares/blob/cares-1_15_0/ares_getopt.c#L4-L38
+    NOASSERTION is detected because of the content at line:
+    https://github.com/c-ares/c-ares/blob/cares-1_15_0/ares_getopt.c#L4

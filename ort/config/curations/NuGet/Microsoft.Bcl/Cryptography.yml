@@ -1,0 +1,7 @@
+- id: "NuGet:Microsoft.Bcl:Cryptography"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/dotnet/blob/v10.0.2/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Bcl.Cryptography/10.0.2/license": "MIT"

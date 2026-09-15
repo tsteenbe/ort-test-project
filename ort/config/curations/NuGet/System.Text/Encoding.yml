@@ -1,0 +1,53 @@
+- id: "NuGet:System.Text:Encoding"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:System.Text:Encoding:[4.0.0,4.3.0]"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+
+- id: "NuGet:System.Text:Encoding:[4.0.0,4.3.0]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/System.Text.Encoding/src"
+
+- id: "NuGet:System.Text:Encoding:4.3.0"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Encoding and
+      https://github.com/dotnet/corefx/commits/release/3.1/src/System.Text.Encoding/src.
+    vcs:
+      revision: "9e8050a2bdca9aeff16bd8e704f380e86813821d"
+
+- id: "NuGet:System.Text:Encoding:4.0.11"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Encoding and
+      https://github.com/dotnet/corefx/commits/release/3.1/src/System.Text.Encoding/src.
+    vcs:
+      revision: "5a6311687ee04bc625a220f83374ecd7ac78ae98"
+
+- id: "NuGet:System.Text:Encoding:4.0.10"
+  curations:
+    comment: |
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://www.nuget.org/packages/System.Text.Encoding and
+      https://github.com/dotnet/corefx/commits/release/3.1/src/System.Text.Encoding/src.
+    vcs:
+      revision: "58e2f6e862060039e1ebad727d75c87703fdb2f2"

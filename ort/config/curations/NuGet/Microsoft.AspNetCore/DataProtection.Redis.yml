@@ -1,0 +1,18 @@
+- id: "NuGet:Microsoft.AspNetCore:DataProtection.Redis:2.1.6"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/DataProtection/src/Microsoft.AspNetCore.DataProtection.Redis"
+- id: "NuGet:Microsoft.AspNetCore:DataProtection.Redis:[2.0.1,2.0.2]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.DataProtection.Redis"
+- id: "NuGet:Microsoft.AspNetCore:DataProtection.Redis:[2.1.7,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/DataProtection/Redis/src"

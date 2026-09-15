@@ -1,0 +1,20 @@
+- id: "NuGet:System.Reflection:Metadata:1.6.0"
+  curations:
+    comment: |
+      Repository with sources has no tag/releases matching this package version:
+      https://github.com/dotnet/corefx
+      'system.reflection.metadata.1.6.0.nupkg' archive was downloaded and extracted:
+      https://www.nuget.org/api/v2/package/System.Reflection.Metadata/1.6.0
+      There is a 'version.txt' file inside the .nupkg archive that identifies the commit used for this version.
+      https://github.com/dotnet/corefx/tree/30ab651fcb4354552bd4891619a0bdd81e0ebdbf/src/System.Reflection.Metadata
+    vcs:
+      type: "Git"
+      url: "https://github.com/dotnet/corefx.git"
+      revision: "30ab651fcb4354552bd4891619a0bdd81e0ebdbf"
+      path: "src/System.Reflection.Metadata"
+- id: "NuGet:System.Reflection:Metadata:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/libraries/System.Reflection.Metadata"

@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.PowerBIDedicated"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/powerbidedicated/Microsoft.Azure.Management.PowerBIDedicated"

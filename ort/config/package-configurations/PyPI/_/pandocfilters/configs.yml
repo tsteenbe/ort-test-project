@@ -1,0 +1,13 @@
+---
+id: "PyPI::pandocfilters:(,1.5.1]"
+path_excludes:
+- pattern: "**/CHANGELOG*"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/PKG-INFO"
+  reason: "DATA_FILE_OF"
+  comment: |
+    Package metadata file generated during build. Not included of the distributed runtime artifact.
+- pattern: "**/setup.cfg"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/setup.py"
+  reason: "BUILD_TOOL_OF"

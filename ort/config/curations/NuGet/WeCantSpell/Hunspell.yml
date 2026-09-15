@@ -1,0 +1,9 @@
+
+- id: "NuGet:WeCantSpell:Hunspell:[1.0.0,)"
+  curations:
+    comment: |
+      Mappping declared license based on
+      https://github.com/aarondandy/WeCantSpell.Hunspell/blob/7.0.1/license.txt and
+      https://github.com/aarondandy/WeCantSpell.Hunspell/blob/1.0.0/license.txt
+    declared_license_mapping:
+      "https://www.nuget.org/packages/WeCantSpell.Hunspell/7.0.1/license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later"

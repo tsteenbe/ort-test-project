@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:SignalR.Client.SourceGenerator"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/SignalR/clients/csharp/Client.SourceGenerator/src"

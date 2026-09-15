@@ -1,0 +1,7 @@
+- id: "NuGet::Stateless"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet-state-machine/stateless/blob/eff879c5/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Stateless/5.20.1/license": "Apache-2.0"

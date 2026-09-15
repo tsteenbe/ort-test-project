@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:Authorization.Policy:(,2.2.0]"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Microsoft.AspNetCore.Authorization.Policy"

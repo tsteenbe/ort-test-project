@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.SimpleEmailV2:PCL:[3.3.630,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/SimpleEmailV2"

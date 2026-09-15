@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK:CognitoIdentityProvider:[3.1.65,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/CognitoIdentityProvider"

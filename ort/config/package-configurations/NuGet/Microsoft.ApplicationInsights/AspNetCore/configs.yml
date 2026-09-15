@@ -1,0 +1,33 @@
+---
+id: "NuGet:Microsoft.ApplicationInsights:AspNetCore:[2.22.0,2.23.0]"
+source_code_origin: VCS
+license_finding_curations:
+- path: "LOGGING/ThirdPartyNotices.txt"
+  start_lines: "1"
+  line_count: 288
+  detected_license: "NOASSERTION AND Apache-2.0 AND MIT AND BSD-3-Clause"
+  concluded_license: "Apache-2.0 AND MIT AND BSD-3-Clause"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on licenses Apache-2.0 AND MIT AND BSD-3-Clause see file
+    https://github.com/microsoft/ApplicationInsights-dotnet/blob/2.22.0/LOGGING/ThirdPartyNotices.txt#L1-L289
+- path: "NETCORE/ThirdPartyNotices.txt"
+  start_lines: "5"
+  line_count: 213
+  detected_license: "NOASSERTION AND Apache-2.0"
+  concluded_license: "Apache-2.0"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on license Apache-2.0 see file
+    https://github.com/microsoft/ApplicationInsights-dotnet/blob/2.22.0/NETCORE/ThirdPartyNotices.txt#L1-L212
+- path: "WEB/ThirdPartyNotices.txt"
+  start_lines: "4"
+  line_count: 536
+  detected_license: "NOASSERTION AND BSD-3-Clause AND MIT AND MS-PL AND Apache-2.0 AND CC-BY-3.0-US AND CC-BY-3.0 AND MS-RL"
+  concluded_license: "BSD-3-Clause AND MIT AND MS-PL AND Apache-2.0 AND MS-RL"
+  reason: "DOCUMENTATION_OF"
+  comment: |
+    Match on licenses BSD-3-Clause AND MIT AND MS-PL AND Apache-2.0 AND MS-RL
+    https://github.com/microsoft/ApplicationInsights-dotnet/blob/2.22.0/WEB/ThirdPartyNotices.txt#L1-L540 and 
+    CC-BY-3.0-US is related to Documentation is licensed under the Creative Commons Attribution 3.0 United States (Unported) License see file
+    https://github.com/microsoft/ApplicationInsights-dotnet/blob/2.22.0/WEB/ThirdPartyNotices.txt#L488C6-L489

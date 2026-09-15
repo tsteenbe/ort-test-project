@@ -1,0 +1,19 @@
+- id: "NuGet::SharpSvn.1.9-x64"
+  curations:
+    comment: |
+      No VCS information in package metadata. This repo was chosen because the original
+      maintainer of SharpSvn is a contributor and it is actively maintained.
+    vcs:
+      type: "Git"
+      url: "https://github.com/AmpScm/SharpSvn.git"
+
+- id: "NuGet::SharpSvn.1.9-x64:1.9007.3987.251"
+  curations:
+    comment: |
+      Tag missing in Git, revision found by correlating commits with package release date.
+      Package code repository missing version tag for this release.
+      The exact commit for this version could not be determined.
+      Using the closest commit based on the package release date and/or code repository filepath history, see
+      https://github.com/AmpScm/SharpSvn.git/commit/https://github.com/AmpScm/SharpSvn/commit/2d485aaca786ceb37078bf41667576a10e1efc89.
+    vcs:
+      revision: "2d485aaca786ceb37078bf41667576a10e1efc89"

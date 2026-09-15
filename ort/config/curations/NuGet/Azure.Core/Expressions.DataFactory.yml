@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.Core:Expressions.DataFactory"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/core/Azure.Core.Expressions.DataFactory"

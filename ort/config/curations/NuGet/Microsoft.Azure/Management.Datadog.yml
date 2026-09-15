@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Datadog"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/datadog/Microsoft.Azure.Management.Datadog"

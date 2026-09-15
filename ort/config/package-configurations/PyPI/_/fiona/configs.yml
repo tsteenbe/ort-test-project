@@ -1,0 +1,25 @@
+---
+id: "PyPI::fiona:(,1.10.1]"
+path_excludes:
+- pattern: "**/*doc*/**"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/CHANGES.txt"
+  reason: "DOCUMENTATION_OF"
+- pattern: "**/PKG-INFO"
+  reason: "DATA_FILE_OF"
+  comment: |
+    Package metadata file generated during build. Not included of the distributed runtime artifact.
+- pattern: "**/appveyor/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/ci/**"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/examples/**"
+  reason: "EXAMPLE_OF"
+- pattern: "**/setup.cfg"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/setup.py"
+  reason: "BUILD_TOOL_OF"

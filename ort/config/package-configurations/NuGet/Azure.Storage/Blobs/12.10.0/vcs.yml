@@ -1,0 +1,11 @@
+---
+id: "NuGet:Azure.Storage:Blobs:12.10.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/Azure/azure-sdk-for-net.git"
+  revision: "8b1c549d3adedc855d5b3f47143dc9be7db8b9ec"
+path_excludes:
+  - pattern: "sdk/compute/Microsoft.Azure.Management.Compute/tests/**"
+    reason: "TEST_OF"
+  - pattern: "sdk/storage/Azure.Storage.Blobs/tests/**"
+    reason: "TEST_OF"

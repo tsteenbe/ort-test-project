@@ -1,0 +1,38 @@
+- id: "NuGet:Azure.Messaging:EventGrid"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Azure.Messaging:EventGrid"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Messaging.EventGrid_4.29.0/LICENSE.txt
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Messaging.EventGrid/4.7.0/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Messaging.EventGrid/4.29.0/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Messaging.EventGrid/5.0.0/license": "MIT"
+
+- id: "NuGet:Azure.Messaging:EventGrid:[4.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/Azure.Messaging.EventGrid
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:Azure.Messaging:EventGrid:[4.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/eventgrid/Azure.Messaging.EventGrid/src"
+
+- id: "NuGet:Azure.Messaging:EventGrid:4.29.0"
+  curations:
+    comment: |
+      Package version format in metadata differs from repository version tag format.
+    vcs:
+      revision: "Azure.Messaging:EventGrid_4.29.0"

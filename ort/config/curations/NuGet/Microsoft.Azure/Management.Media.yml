@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Media"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/mediaservices/Microsoft.Azure.Management.Media"

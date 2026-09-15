@@ -1,0 +1,30 @@
+- id: "NuGet:Azure.Storage:Common"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Azure.Storage:Common"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Common_12.28.0/LICENSE.txt.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Azure.Storage.Common/12.22.0/license": "MIT"
+      "https://www.nuget.org/packages/Azure.Storage.Common/12.28.0/license": "MIT"
+
+- id: "NuGet:Azure.Storage:Common:[12.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+      Found VCS via package registry, see https://www.nuget.org/packages/azure.storage.common.
+    vcs:
+      type: "Git"
+      url: "https://github.com/Azure/azure-sdk-for-net.git"
+
+- id: "NuGet:Azure.Storage:Common:[12.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/storage/Azure.Storage.Common/src"

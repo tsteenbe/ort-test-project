@@ -1,0 +1,6 @@
+- id: "NuGet:Azure.ResourceManager:ApiManagement"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/apimanagement/Azure.ResourceManager.ApiManagement"

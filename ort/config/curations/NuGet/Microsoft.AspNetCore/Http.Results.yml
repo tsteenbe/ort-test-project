@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.AspNetCore:Http.Results:[6.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "src/Http/Http.Results/src"

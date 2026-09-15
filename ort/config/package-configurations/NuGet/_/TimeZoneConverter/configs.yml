@@ -1,0 +1,11 @@
+---
+id: "NuGet::TimeZoneConverter:(,7.2.0]"
+path_excludes:
+- pattern: "**/*.csproj"
+  reason: "BUILD_TOOL_OF"
+- pattern: "**/*test*/**"
+  reason: "TEST_OF"
+- pattern: "**/.editorconfig"
+  reason: "OTHER"
+- pattern: "**/.github/**"
+  reason: "BUILD_TOOL_OF"

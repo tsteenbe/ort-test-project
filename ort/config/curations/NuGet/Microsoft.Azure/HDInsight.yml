@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:HDInsight"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/hdinsight/Microsoft.Azure.HDInsight.Job"

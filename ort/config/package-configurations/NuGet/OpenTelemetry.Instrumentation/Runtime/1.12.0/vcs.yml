@@ -1,0 +1,9 @@
+---
+id: "NuGet:OpenTelemetry.Instrumentation:Runtime:1.12.0"
+vcs:
+  type: "Git"
+  url: "https://github.com/open-telemetry/opentelemetry-dotnet-contrib.git"
+  revision: "f8e1ea203339d1d03f80f7681beacb403790f4b3"
+path_excludes:
+  - pattern: "test/**"
+    reason: "TEST_OF"

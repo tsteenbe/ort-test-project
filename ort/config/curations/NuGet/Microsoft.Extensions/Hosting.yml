@@ -1,0 +1,21 @@
+- id: "NuGet:Microsoft.Extensions:Hosting:[5.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      type: "git"
+      url: "https://github.com/dotnet/runtime.git"
+      path: "src/libraries/Microsoft.Extensions.Hosting"
+
+- id: "NuGet:Microsoft.Extensions:Hosting"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/dotnet/runtime/blob/main/LICENSE.TXT,
+      https://github.com/dotnet/aspnetcore/blob/v9.0.12/LICENSE.txt#L1-L23 and
+      https://github.com/dotnet/runtime/blob/v10.0.0/LICENSE.TXT.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Microsoft.Extensions.Hosting/8.0.1/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Hosting/9.0.12/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Hosting/10.0.0/license": "MIT"
+      "https://www.nuget.org/packages/Microsoft.Extensions.Hosting/10.0.10/license": "MIT"

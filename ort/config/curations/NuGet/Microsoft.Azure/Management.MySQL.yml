@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.MySQL"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/mysql/Microsoft.Azure.Management.MySQL"

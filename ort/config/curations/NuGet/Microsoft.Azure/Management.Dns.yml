@@ -1,0 +1,6 @@
+- id: "NuGet:Microsoft.Azure:Management.Dns"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/dns/Microsoft.Azure.Management.Dns"

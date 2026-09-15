@@ -1,0 +1,34 @@
+- id: "NuGet:Google:Protobuf"
+  curations:
+    comment: |
+      Enforce scanning the code repository because the source artifact does not contain all corresponding source files.
+    source_code_origins: [VCS]
+
+- id: "NuGet:Google:Protobuf:[3.0.0,)"
+  curations:
+    comment: |
+      Package code repository location is not declared, or the metadata is unavailable from internal package registries (e.g., Artifactory).
+    vcs:
+      type: "Git"
+      url: "https://github.com/protocolbuffers/protobuf.git"
+
+- id: "NuGet:Google:Protobuf:[3.0.0,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "csharp/src/Google.Protobuf"
+
+- id: "NuGet:Google:Protobuf"
+  curations:
+    comment: |
+      Map declared license based on
+      https://github.com/protocolbuffers/protobuf/blob/v3.28.0/LICENSE.
+      https://github.com/protocolbuffers/protobuf/blob/v34.0/LICENSE.
+      https://github.com/protocolbuffers/protobuf/blob/v33.5/LICENSE.
+    declared_license_mapping:
+      "https://www.nuget.org/packages/Google.Protobuf/3.28.0/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Google.Protobuf/3.32.0/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Google.Protobuf/3.33.5/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Google.Protobuf/3.34.0/license": "BSD-3-Clause"
+      "https://www.nuget.org/packages/Google.Protobuf/3.35.1/license": "BSD-3-Clause"

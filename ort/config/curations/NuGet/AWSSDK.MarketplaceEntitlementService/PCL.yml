@@ -1,0 +1,6 @@
+- id: "NuGet:AWSSDK.MarketplaceEntitlementService:PCL:[3.3.84,)"
+  curations:
+    comment: |
+      Package resides in its own directory within code repository.
+    vcs:
+      path: "sdk/src/Services/MarketplaceEntitlementService"
